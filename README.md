@@ -65,7 +65,7 @@ OES-512 (512 channels as 16 × 32 blocks; weighted latch S = 0.45·Peak + 0.35·
   | **TARGET** | A design goal; not yet achieved or measured |
   | **UNRUN** | Tooling or scripts exist; the run has not been performed |
 
-- **Reproducible by default.** Every README has a Quickstart that was run from a fresh clone, and CI runs the tests on every change.
+- **Reproducible by default.** Each README's Quickstart was run from a fresh clone or is marked UNRUN, and repositories with code run their tests in CI on every change.
 - **Accessibility first.** Ask for alternative formats by opening an issue in any repository.
 
 Contribution guidelines, the code of conduct, and the security policy are shared across all repositories: [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
