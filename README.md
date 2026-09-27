@@ -46,11 +46,15 @@ Spark AI NLP is a disability-led company working on holographic systems and rese
 | Repository | What it is | Evidence status |
 |---|---|---|
 | [quantum-error-correction-demo](https://github.com/sparkainlp-x/quantum-error-correction-demo) | Classical Python toy simulation (no qubits, no QEC code) | All outputs SYNTHETIC; seeded smoke run in CI |
-| [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) | Placeholder for OES-512 (16 × OES-32 blocks) | TARGET; source not published |
+| [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) | OES-512 = 16 × OES-32 residual blocks: weighted-latch reference and browser avatar | Seed-42 benchmark SYNTHETIC; operational use UNRUN |
+| [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch) | OES-32/OES-512 classical residual latch with a self-calibrated threshold; 47-series NAB benchmark (mixed results, reported as measured) | Unit tests SYNTHETIC; NAB numbers REPORTED; not a quantum code |
+| [oes32-membrane-shield](https://github.com/sparkainlp-x/oes32-membrane-shield) | Ed25519 capability-gated 32-slot state machine with dual-approval calibration and the ADR-001 residual latch | 25 tests incl. fuzz pass in CI; SYNTHETIC; independent security review of v2 UNRUN |
+| [phmt4-montecarlo](https://github.com/sparkainlp-x/phmt4-montecarlo) | Heuristic classical numpy simulation (density-matrix "membranes", mirror, Observer/Calibrator), v1 vs v2 ablation | 18 tests pass in CI; all numbers SYNTHETIC; not a consciousness or quantum-hardware claim |
+| [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) | Source-grounded RAG (ChromaDB + Ollama) that refuses instead of guessing when retrieval relevance is too low | 10 tests pass in CI on SYNTHETIC fixtures; answer quality UNRUN |
 
 </details>
 
-OES-512 (512 channels as 16 × 32 blocks; weighted latch S = 0.45·Peak + 0.35·RMS + 0.20·MeanAbs, τ = 0.50) is a **TARGET** design and is not published.
+Every public repository is archived on Zenodo with a DOI (see each README) and grouped in the [Spark AI NLP Zenodo community](https://zenodo.org/communities/spark-ai-nlp/).
 
 ## How I work
 
