@@ -54,7 +54,7 @@ Spark AI NLP is a disability-led company working on holographic systems and rese
 
 </details>
 
-Every public repository is archived on Zenodo with a DOI (see each README) and grouped in the [Spark AI NLP Zenodo community](https://zenodo.org/communities/spark-ai-nlp/).
+Every public research repository listed above is archived on Zenodo with a DOI (see each README) and grouped in the [Spark AI NLP Zenodo community](https://zenodo.org/communities/spark-ai-nlp/).
 
 ## How I work
 
