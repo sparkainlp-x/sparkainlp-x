@@ -16,6 +16,7 @@
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
   <a href="https://www.linkedin.com/in/jean-francois-brisson-41927b3a4">LinkedIn</a> ·
+  <a href="https://orcid.org/0009-0000-9778-5374"><img src="https://img.shields.io/badge/ORCID-0009--0000--9778--5374-A6CE39?logo=orcid&logoColor=white" alt="ORCID iD 0009-0000-9778-5374" height="20" /></a> ·
   Founder: Jean-François Brisson ·
   Français (langue maternelle) · English (fluent)
 </p>
@@ -80,4 +81,5 @@ Open to research groups, FPGA/decoder engineers, and accessibility-focused partn
 
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
 - LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-francois-brisson-41927b3a4)
+- ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
 - Questions about code: open an issue in the relevant repository
