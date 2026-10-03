@@ -15,7 +15,7 @@
 
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
-  <a href="https://www.linkedin.com/in/jean-francois-brisson-41927b3a4">LinkedIn</a> ·
+  <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4">LinkedIn</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374"><img src="https://img.shields.io/badge/ORCID-0009--0000--9778--5374-A6CE39?logo=orcid&logoColor=white" alt="ORCID iD 0009-0000-9778-5374" height="20" /></a> ·
   <a href="https://zenodo.org/communities/spark-ai-nlp/"><img src="https://img.shields.io/badge/Zenodo-Spark%20AI%20NLP-1682D4?logo=zenodo&logoColor=white" alt="Zenodo community: Spark AI NLP: Research Software" height="20" /></a><br/>
   Founder: Jean-François Brisson · Français (langue maternelle) · English (fluent)
@@ -102,6 +102,6 @@ Each archived repository has a `CITATION.cff` file (use GitHub's **"Cite this re
 Open to applied AI research and research-software roles (remote within Canada, or Fredericton, NB), and to collaboration with research groups, FPGA/decoder engineers, and accessibility-focused partners.
 
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
-- LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-francois-brisson-41927b3a4)
+- LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
 - ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
 - Questions about code: open an issue in the relevant repository
