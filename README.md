@@ -10,15 +10,15 @@
 
 <p align="center">
   Disability-led research software from Fredericton, NB, Canada.<br/>
-  RAG guardrails, residual-latch anomaly detection, C++/HLS research prototypes, and evidence-tagged artifacts.
+  Reproducible telemetry anomaly detection, C++/HLS research prototypes, RAG guardrails, and offline provenance tools, with an evidence tag on every number.
 </p>
 
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
   <a href="https://www.linkedin.com/in/jean-francois-brisson-41927b3a4">LinkedIn</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374"><img src="https://img.shields.io/badge/ORCID-0009--0000--9778--5374-A6CE39?logo=orcid&logoColor=white" alt="ORCID iD 0009-0000-9778-5374" height="20" /></a> ·
-  Founder: Jean-François Brisson ·
-  Français (langue maternelle) · English (fluent)
+  <a href="https://zenodo.org/communities/spark-ai-nlp/"><img src="https://img.shields.io/badge/Zenodo-Spark%20AI%20NLP-1682D4?logo=zenodo&logoColor=white" alt="Zenodo community: Spark AI NLP: Research Software" height="20" /></a><br/>
+  Founder: Jean-François Brisson · Français (langue maternelle) · English (fluent)
 </p>
 
 <p align="center">
@@ -28,39 +28,57 @@
   <img src="https://img.shields.io/badge/Method-Evidence--tagged-0891B2?style=for-the-badge" alt="Evidence-tagged research" />
 </p>
 
+> **Open to work:** applied AI research and research-software roles, remote within Canada or on site in Fredericton. Contact details are [below](#contact).
+
 ## About
 
-Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories below are **research prototypes**: a source-grounded RAG guardrail, deterministic residual-latch anomaly detection, and C++/HLS exploration. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
+Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
 
 ## Featured work
 
-| Repository | What it is | Evidence status |
-|---|---|---|
-| [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) | Source-grounded RAG (ChromaDB + Ollama) that refuses instead of guessing when retrieval relevance is too low | 10 tests pass in CI on SYNTHETIC fixtures; answer quality UNRUN |
-| [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch) | OES-32/OES-512 classical residual latch with a self-calibrated threshold; 47-series NAB benchmark (mixed results, reported as measured) | Unit tests SYNTHETIC; NAB numbers REPORTED; not a quantum code |
-| [oes32-residual](https://github.com/sparkainlp-x/oes32-residual) | **Normative** OES-32 residual (ADR-001): max-absolute residual over two 32-vectors, strict `>` tolerance rule, contract tests. Release [v0.1.1](https://github.com/sparkainlp-x/oes32-residual/releases/tag/v0.1.1) | 12 contract tests pass in CI (Python 3.11–3.13); SYNTHETIC inputs |
-| [oes32-membrane-shield](https://github.com/sparkainlp-x/oes32-membrane-shield) | Ed25519 capability-gated 32-slot state machine with dual-approval calibration and the ADR-001 residual latch | 25 tests incl. fuzz pass in CI; SYNTHETIC; independent security review of v2 UNRUN |
-| [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) | C++/HLS qLDPC decoder scaffold: CMake + Catch2 + GF(2) micro-benchmark, Vitis/Vivado/PetaLinux scripts | Software build and tests pass in CI; BP kernel is a placeholder; hardware results UNRUN; ~70 ns GF(2) micro-benchmark REPORTED (host unspecified), not decoding latency |
+| Repository | What it is | Evidence status | Archive |
+|---|---|---|---|
+| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.4.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation against a hashed preregistration, and a detector plugin API | CI checks that the baseline summary reproduces byte for byte; all data SYNTHETIC | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
+| [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.0 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22985525.svg)](https://doi.org/10.5281/zenodo.22985525) |
+| [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.1 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
+| [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.0 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22998570.svg)](https://doi.org/10.5281/zenodo.22998570) |
+| [**context-wallet**](https://github.com/sparkainlp-x/context-wallet) · v1.1.0 | Offline tool for building small, user-selected, short-lived JSON context packets; you see a preview before anything is exported | Tests run in CI; sample data is fictional; not encryption or authentication | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23061441.svg)](https://doi.org/10.5281/zenodo.23061441) |
+| [**measurement-trail**](https://github.com/sparkainlp-x/measurement-trail) · v1.1.0 | Offline tool for SHA-256 hash-chained measurement provenance trails (JSONL) with integrity verification | Tests run in CI; standard library only; bundled sample trail | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23067465.svg)](https://doi.org/10.5281/zenodo.23067465) |
 
 <details>
 <summary>Other public repositories</summary>
 
-| Repository | What it is | Evidence status |
-|---|---|---|
-| [oes32_engine](https://github.com/sparkainlp-x/oes32_engine) | Profile A sidecar: standard-library Python telemetry-triage harness (residual latch, EVEN/ODD symmetry, FOLD8) with a technical specification | 7 unit tests pass in CI (Python 3.11/3.12); SYNTHETIC inputs; not certified control software |
-| [oes32-hls](https://github.com/sparkainlp-x/oes32-hls) | Profile A sidecar: C++ HLS prototype of the same checks; AMD ZCU111 as a design target | `g++` testbench passes in CI (8/8 checks); FPGA synthesis and latency UNRUN / TARGET |
-| [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) | OES-512 = 16 × OES-32 residual blocks: weighted-latch reference and browser avatar | Seed-42 benchmark SYNTHETIC; operational use UNRUN |
-| [phmt4-montecarlo](https://github.com/sparkainlp-x/phmt4-montecarlo) | Heuristic classical numpy simulation (density-matrix "membranes", mirror, Observer/Calibrator), v1 vs v2 ablation | 18 tests pass in CI; all numbers SYNTHETIC; not a consciousness or quantum-hardware claim |
-| [quantum-error-correction-demo](https://github.com/sparkainlp-x/quantum-error-correction-demo) | Classical Python toy simulation (no qubits, no QEC code) | All outputs SYNTHETIC; seeded smoke run in CI |
+**More research software**
+
+- [coil-efficiency-bench](https://github.com/sparkainlp-x/coil-efficiency-bench): paired baseline-vs-candidate motor-efficiency analysis with a Student's t CI; bundled data is SYNTHETIC. [DOI 10.5281/zenodo.23067995](https://doi.org/10.5281/zenodo.23067995)
+- [oes32-membrane-shield](https://github.com/sparkainlp-x/oes32-membrane-shield): 32-slot state machine gated by Ed25519 capabilities, with dual-approval calibration; 25 tests, including fuzz tests, pass in CI; independent security review UNRUN.
+- [oes32-residual](https://github.com/sparkainlp-x/oes32-residual): the **normative** OES-32 residual (ADR-001) with 12 contract tests in CI (Python 3.11–3.13).
+- [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail): source-grounded RAG (ChromaDB + Ollama) that refuses to answer when retrieval relevance is too low; 10 tests on SYNTHETIC fixtures; answer quality UNRUN.
+
+**Smaller prototypes and demos**
+
+[qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) (C++/HLS decoder scaffold; BP kernel is a placeholder; hardware UNRUN) ·
+[oes32_engine](https://github.com/sparkainlp-x/oes32_engine) ·
+[oes512-residual](https://github.com/sparkainlp-x/oes512-residual) ·
+[signal-commons](https://github.com/sparkainlp-x/signal-commons) ·
+[signal-test-commons](https://github.com/sparkainlp-x/signal-test-commons) ·
+[internal-outage-radar](https://github.com/sparkainlp-x/internal-outage-radar) ·
+[web-delta-feed](https://github.com/sparkainlp-x/web-delta-feed) ·
+[pocket-internet](https://github.com/sparkainlp-x/pocket-internet) ·
+[pilottrace](https://github.com/sparkainlp-x/pilottrace) ·
+[phmt4-montecarlo](https://github.com/sparkainlp-x/phmt4-montecarlo) (heuristic classical simulation) ·
+[quantum-error-correction-demo](https://github.com/sparkainlp-x/quantum-error-correction-demo) (classical toy; no qubits, no QEC code)
+
+Each repository's README covers its scope, its limits, and evidence tags.
 
 </details>
 
-Every public research repository listed above is archived on Zenodo with a DOI (see each README) and grouped in the [Spark AI NLP Zenodo community](https://zenodo.org/communities/spark-ai-nlp/).
+Most public research repositories are archived on Zenodo with DOIs (see each README) and grouped in the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## How I work
 
 - **Contracts first.** Each definition lives in one normative place with executable tests. For OES-32 that is [oes32-residual@b77b612](https://github.com/sparkainlp-x/oes32-residual/tree/b77b61254f15778c6ae221843dceac7a8571158e) (ADR-001); other implementations are labelled Profile A sidecars and document how they differ.
-- **Fail-closed.** Invalid input is rejected rather than guessed, and so are claims: if something has not been run or measured, the README says so.
+- **Fail-closed.** Invalid input is rejected rather than guessed, and so are claims: if something has not been run or measured, the README says so. Negative results are published too.
 - **Evidence tags on every number.**
 
   | Tag | Meaning |
@@ -75,9 +93,13 @@ Every public research repository listed above is archived on Zenodo with a DOI (
 
 Contribution guidelines, the code of conduct, and the security policy are shared across all repositories: [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
 
+## Cite
+
+Each archived repository has a `CITATION.cff` file (use GitHub's **"Cite this repository"** button) and a Zenodo concept DOI covering all versions. To refer to exact code, cite the version DOI listed in that repository's README. All records are in the [Zenodo community](https://zenodo.org/communities/spark-ai-nlp/).
+
 ## Contact
 
-Open to research groups, FPGA/decoder engineers, and accessibility-focused partners.
+Open to applied AI research and research-software roles (remote within Canada, or Fredericton, NB), and to collaboration with research groups, FPGA/decoder engineers, and accessibility-focused partners.
 
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
 - LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-francois-brisson-41927b3a4)
