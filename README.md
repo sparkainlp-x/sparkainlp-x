@@ -43,7 +43,7 @@ Spark AI NLP is a disability-led research-software company based in Fredericton,
 | [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.0 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22998570.svg)](https://doi.org/10.5281/zenodo.22998570) |
 | [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.1 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
 | [**digital-to-wave-testbench**](https://github.com/sparkainlp-x/digital-to-wave-testbench) · v0.4.1 | Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs) | All results SYNTHETIC; no physical validity claimed | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23122876.svg)](https://doi.org/10.5281/zenodo.23122876) |
-| [**spark-oes512-demo**](https://github.com/sparkainlp-x/spark-oes512-demo) | Browser prototype for explainable 512-channel monitoring with the same transparent OES32-style block score | SYNTHETIC only; not a medical device; [live demo](https://sparkainlp-x.github.io/spark-oes512-demo/); DOI pending | — |
+| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.0 | Offline stdlib MVP: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256) | Bundled OES-Resilience SMAP/MSL sample: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/); DOI pending | — |
 
 <details>
 <summary>Other public repositories</summary>
@@ -63,6 +63,7 @@ Spark AI NLP is a disability-led research-software company based in Fredericton,
 **Smaller prototypes and demos**
 
 [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) (FR educational HTML; SYNTHETIC) ·
+[spark-oes512-demo](https://github.com/sparkainlp-x/spark-oes512-demo) (browser OES32-style demo; SYNTHETIC) ·
 [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) ·
 [pilottrace](https://github.com/sparkainlp-x/pilottrace) ·
 [signal-commons](https://github.com/sparkainlp-x/signal-commons) ·
