@@ -38,34 +38,40 @@ Spark AI NLP is a disability-led research-software company based in Fredericton,
 
 | Repository | What it is | Evidence status | Archive |
 |---|---|---|---|
-| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.4.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation against a hashed preregistration, and a detector plugin API | CI checks that the baseline summary reproduces byte for byte; all data SYNTHETIC | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
+| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.5.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, and a preregistered NASA SMAP/MSL comparison | Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
 | [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.0 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22985525.svg)](https://doi.org/10.5281/zenodo.22985525) |
-| [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.1 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
 | [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.0 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22998570.svg)](https://doi.org/10.5281/zenodo.22998570) |
-| [**context-wallet**](https://github.com/sparkainlp-x/context-wallet) · v1.1.0 | Offline tool for building small, user-selected, short-lived JSON context packets; you see a preview before anything is exported | Tests run in CI; sample data is fictional; not encryption or authentication | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23061441.svg)](https://doi.org/10.5281/zenodo.23061441) |
-| [**measurement-trail**](https://github.com/sparkainlp-x/measurement-trail) · v1.1.0 | Offline tool for SHA-256 hash-chained measurement provenance trails (JSONL) with integrity verification | Tests run in CI; standard library only; bundled sample trail | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23067465.svg)](https://doi.org/10.5281/zenodo.23067465) |
+| [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.1 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
+| [**digital-to-wave-testbench**](https://github.com/sparkainlp-x/digital-to-wave-testbench) · v0.4.1 | Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs) | All results SYNTHETIC; no physical validity claimed | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23122876.svg)](https://doi.org/10.5281/zenodo.23122876) |
+| [**spark-oes512-demo**](https://github.com/sparkainlp-x/spark-oes512-demo) | Browser prototype for explainable 512-channel monitoring with the same transparent OES32-style block score | SYNTHETIC only; not a medical device; [live demo](https://sparkainlp-x.github.io/spark-oes512-demo/); DOI pending | — |
 
 <details>
 <summary>Other public repositories</summary>
 
 **More research software**
 
-- [coil-efficiency-bench](https://github.com/sparkainlp-x/coil-efficiency-bench): paired baseline-vs-candidate motor-efficiency analysis with a Student's t CI; bundled data is SYNTHETIC. [DOI 10.5281/zenodo.23067995](https://doi.org/10.5281/zenodo.23067995)
-- [oes32-membrane-shield](https://github.com/sparkainlp-x/oes32-membrane-shield): 32-slot state machine gated by Ed25519 capabilities, with dual-approval calibration; 25 tests, including fuzz tests, pass in CI; independent security review UNRUN.
 - [oes32-residual](https://github.com/sparkainlp-x/oes32-residual): the **normative** OES-32 residual (ADR-001) with 12 contract tests in CI (Python 3.11–3.13).
+- [oes32-membrane-shield](https://github.com/sparkainlp-x/oes32-membrane-shield): 32-slot state machine gated by Ed25519 capabilities, with dual-approval calibration; 25 tests, including fuzz tests, pass in CI; independent security review UNRUN.
 - [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail): source-grounded RAG (ChromaDB + Ollama) that refuses to answer when retrieval relevance is too low; 10 tests on SYNTHETIC fixtures; answer quality UNRUN.
+
+**Offline tools**
+
+- [context-wallet](https://github.com/sparkainlp-x/context-wallet): user-selected, short-lived JSON context packets (preview before export). [DOI 10.5281/zenodo.23061441](https://doi.org/10.5281/zenodo.23061441)
+- [measurement-trail](https://github.com/sparkainlp-x/measurement-trail): SHA-256 hash-chained measurement provenance trails. [DOI 10.5281/zenodo.23067465](https://doi.org/10.5281/zenodo.23067465)
+- [coil-efficiency-bench](https://github.com/sparkainlp-x/coil-efficiency-bench): paired motor-efficiency analysis with a Student's t CI; bundled data SYNTHETIC. [DOI 10.5281/zenodo.23067995](https://doi.org/10.5281/zenodo.23067995)
 
 **Smaller prototypes and demos**
 
-[qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) (C++/HLS decoder scaffold; BP kernel is a placeholder; hardware UNRUN) ·
-[oes32_engine](https://github.com/sparkainlp-x/oes32_engine) ·
+[address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) (FR educational HTML; SYNTHETIC) ·
 [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) ·
+[pilottrace](https://github.com/sparkainlp-x/pilottrace) ·
 [signal-commons](https://github.com/sparkainlp-x/signal-commons) ·
 [signal-test-commons](https://github.com/sparkainlp-x/signal-test-commons) ·
 [internal-outage-radar](https://github.com/sparkainlp-x/internal-outage-radar) ·
 [web-delta-feed](https://github.com/sparkainlp-x/web-delta-feed) ·
 [pocket-internet](https://github.com/sparkainlp-x/pocket-internet) ·
-[pilottrace](https://github.com/sparkainlp-x/pilottrace) ·
+[oes32_engine](https://github.com/sparkainlp-x/oes32_engine) ·
+[qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) (C++/HLS decoder scaffold; BP kernel placeholder; hardware UNRUN) ·
 [phmt4-montecarlo](https://github.com/sparkainlp-x/phmt4-montecarlo) (heuristic classical simulation) ·
 [quantum-error-correction-demo](https://github.com/sparkainlp-x/quantum-error-correction-demo) (classical toy; no qubits, no QEC code)
 
