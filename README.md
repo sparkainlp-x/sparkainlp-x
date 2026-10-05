@@ -10,7 +10,7 @@
 
 <p align="center">
   Disability-led research software from Fredericton, NB, Canada.<br/>
-  Reproducible telemetry anomaly detection, C++/HLS research prototypes, RAG guardrails, and offline provenance tools, with an evidence tag on every number.
+  Reproducible telemetry anomaly detection, C++/HLS research prototypes, RAG guardrails, and offline evidence- and claims-audit tools, with an evidence tag on every number.
 </p>
 
 <p align="center">
@@ -32,7 +32,7 @@
 
 ## About
 
-Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
+Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, two offline audit tools (Evidence Passport for run-level evidence, Quantum Claims Evidence Passport for public claims against their sources), and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
 
 ## Featured work
 
@@ -43,7 +43,8 @@ Spark AI NLP is a disability-led research-software company based in Fredericton,
 | [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.0 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22998570.svg)](https://doi.org/10.5281/zenodo.22998570) |
 | [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.1 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
 | [**digital-to-wave-testbench**](https://github.com/sparkainlp-x/digital-to-wave-testbench) · v0.4.1 | Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs) | All results SYNTHETIC; no physical validity claimed | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23122876.svg)](https://doi.org/10.5281/zenodo.23122876) |
-| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.0 | Offline stdlib MVP: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256) | Bundled OES-Resilience SMAP/MSL sample: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/); DOI pending | — |
+| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.0 | Offline stdlib audit tool: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256); records declared evidence, never re-scores it | Bundled OES-Resilience SMAP/MSL sample keeps the verdict: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23165143.svg)](https://doi.org/10.5281/zenodo.23165143) |
+| [**quantum-claims-passport**](https://github.com/sparkainlp-x/quantum-claims-passport) · v0.1.0 (unreleased) | Offline claims audit for scientific communication: classifies public claims (a planned Swiss quantum-computer hub; a modeled 613 THz tubulin frequency band; a rat behavioral study) as announcement, computational model, animal behavioral result, hypothesis, or unsupported inference, with exact-SI conversions and no combined score | Source audit only, snapshot 2026-10-05; makes none of the audited claims; no affiliation with the institutions named; [report](https://sparkainlp-x.github.io/quantum-claims-passport/report.html) | DOI pending |
 
 <details>
 <summary>Other public repositories</summary>
