@@ -118,8 +118,8 @@ The profile and repository READMEs distinguish synthetic or theoretical results 
 **Smaller prototypes and demos**
 
 [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) (FR educational HTML; SYNTHETIC) ·
-[conserved-message-graph-demo](https://github.com/sparkainlp-x/conserved-message-graph-demo) (synthetic graph-routing analogy; not general relativity or OES32) ·
-[empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory) (synthetic guessing game and benchmark; not physical-universe or hardware evidence) ·
+[conserved-message-graph-demo](https://github.com/sparkainlp-x/conserved-message-graph-demo) (synthetic graph-routing analogy; not general relativity or OES32; [DOI 10.5281/zenodo.23308959](https://doi.org/10.5281/zenodo.23308959)) ·
+[empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory) (synthetic guessing game and benchmark; not physical-universe or hardware evidence; [DOI 10.5281/zenodo.23308961](https://doi.org/10.5281/zenodo.23308961)) ·
 [max-slate-einstein](https://github.com/sparkainlp-x/max-slate-einstein) (bounded educational character-engine prototype; not Einstein or historical authenticity; [DOI 10.5281/zenodo.23307947](https://doi.org/10.5281/zenodo.23307947)) ·
 [spark-oes512-demo](https://github.com/sparkainlp-x/spark-oes512-demo) (browser OES32-style demo; SYNTHETIC) ·
 [oes512-residual](https://github.com/sparkainlp-x/oes512-residual) ·
