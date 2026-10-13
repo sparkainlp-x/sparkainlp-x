@@ -9,7 +9,7 @@
 <h1 align="center">Spark AI NLP</h1>
 
 <p align="center">
-  Disability-led applied AI and research software from Fredericton, New Brunswick. I build reproducible telemetry benchmarks, C++/HLS prototypes, source-grounded RAG guardrails, and offline evidence-audit tools.
+  Disability-led research-software studio from Fredericton, New Brunswick. Current focus: Evidence Passport, an offline tool for packaging declared experiment evidence and checking release requirements. The broader repository set is a research portfolio, not a set of validated products.
 </p>
 
 <p align="center">
@@ -22,15 +22,19 @@
 
 > **Open to work:** applied AI research and research-software roles, remote within Canada or on site in Fredericton. See [Contact](#contact).
 
-The public repositories are research software and prototypes. They are not hardware, field, or medical products, and they do not report results on quantum hardware.
+The public repositories are research software and prototypes. They are not hardware, field, or medical products, and they do not report results on quantum hardware. Evidence Passport is the flagship candidate, not a commercially validated product.
 
-## Start here
+## Focus and portfolio hierarchy
 
-- [OES-Resilience](https://github.com/sparkainlp-x/oes-resilience) — Reproducible telemetry-anomaly benchmark with detector comparisons and a preregistered NASA SMAP/MSL evaluation. **Outcome:** OES32 did not meet its stated success criterion on that evaluation; see the README for scope and results.
+- **Flagship candidate — [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport):** offline evidence packaging and a local policy-based release gate. It records declared evidence and local hash consistency; it does not independently validate or re-score an experiment.
 
-- [OES32-HLS](https://github.com/sparkainlp-x/oes32-hls) — C++/HLS research prototype with a streaming triage kernel, Python bindings, and bit-exact software tests. **Status:** software tests run; FPGA synthesis and hardware execution are UNRUN.
+- **Supporting research — [OES-Resilience](https://github.com/sparkainlp-x/oes-resilience):** reproducible telemetry benchmark with detector comparisons and a preregistered NASA SMAP/MSL evaluation. **Outcome:** OES32 did not meet its stated success criterion on that evaluation; see the README for scope and results.
 
-- [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport) — Offline tool that converts an experiment-run manifest into a static HTML evidence passport and normalized JSON. It records declared evidence; it does not independently validate or re-score the experiment.
+- **Experimental lab:** the remaining projects below are supporting research, prototypes, and educational demonstrations—not parallel commercial products. For example, [OES32-HLS](https://github.com/sparkainlp-x/oes32-hls) has software tests, while FPGA synthesis and hardware execution are UNRUN.
+
+**Untested buyer hypothesis:** a small AI evaluation or research-software team that needs repeatable evidence packaging and release checks. The economic buyer, budget, current workflow displaced, and willingness to pay remain unverified. Manual checklists, internal scripts, CI checks, and existing governance/evaluation platforms are alternatives to assess—not markets already won.
+
+**External validation status:** this profile does not claim a paid pilot, production deployment, independent replication, or recurring revenue. GitHub activity, code, tests, and DOIs are not presented as substitutes for customer evidence.
 
 ## Evidence labels
 
@@ -43,7 +47,12 @@ Project READMEs use these labels where they report evidence. Check each README f
 
 Code quality or reproducibility alone does not establish scientific validity.
 
-## Projects
+## Supporting research and experimental lab
+
+The following catalog is retained for transparency and citation; it is not a roadmap of multiple active products. Versions are the latest GitHub releases. DOIs are Zenodo concept DOIs (all versions).
+
+<details>
+<summary>Open the categorized repository index</summary>
 
 Versions are the latest GitHub releases. DOIs are Zenodo concept DOIs (all versions).
 
@@ -112,6 +121,8 @@ None of these are quantum-hardware results.
 - [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo): French-language educational HTML; SYNTHETIC. [DOI 10.5281/zenodo.23129671](https://doi.org/10.5281/zenodo.23129671)
 
 Repository documentation varies; check each README for its scope, limits, evidence status and setup.
+
+</details>
 
 ## How I work
 
