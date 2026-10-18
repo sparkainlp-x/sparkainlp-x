@@ -6,11 +6,20 @@
   />
 </p>
 
-<h1 align="center">Spark AI NLP</h1>
+<div align="center">
+
+# Spark AI NLP
+
+### Deterministic runtimes, quantum-error-correction research software and telemetry integrity tools
+
+*Independent research lead and founder: Jean-François Brisson*<br/>
+*Fredericton, New Brunswick, Canada*<br/>
+*Classical software prioritising verifiability, audit transparency and minimal dependencies.*
+
+</div>
 
 <p align="center">
-  Disability-led research software from Fredericton, NB, Canada.<br/>
-  Telemetry research, C++/HLS prototypes, RAG guardrails, and offline evidence-audit tools, with scope and evidence status documented per project.
+  Disability-led research software: telemetry research, C++/HLS prototypes, RAG guardrails, and offline evidence-audit tools, with scope and evidence status documented per project.
 </p>
 
 <p align="center">
@@ -19,7 +28,7 @@
   <a href="https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f">Research notebook</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374"><img src="https://img.shields.io/badge/ORCID-0009--0000--9778--5374-A6CE39?logo=orcid&logoColor=white" alt="ORCID iD 0009-0000-9778-5374" height="20" /></a> ·
   <a href="https://zenodo.org/communities/spark-ai-nlp/"><img src="https://img.shields.io/badge/Zenodo-Spark%20AI%20NLP-1682D4?logo=zenodo&logoColor=white" alt="Zenodo community: Spark AI NLP: Research Software" height="20" /></a><br/>
-  Founder: Jean-François Brisson · Français (langue maternelle) · English (fluent)
+  Français (langue maternelle) · English (fluent)
 </p>
 
 <p align="center">
@@ -34,6 +43,35 @@
 ## About
 
 Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, two offline audit tools (Evidence Passport for run-level evidence, Quantum Claims Evidence Passport for public claims against their sources), and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
+
+## Ecosystem overview
+
+Four projects that show the main strands of the work. Each repository's README defines its own scope and evidence status.
+
+| Project | Domain | What it is | Stack | Archive |
+|---|---|---|---|---|
+| [**identity-runtime**](https://github.com/sparkainlp-x/identity-runtime) | Runtime governance and audit | Governed, reversible avatar personalities: human-approved versions, short revocable capability leases, the OES-61440 tripwire and a hash-chained audit ledger. Research prototype; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/) | Python 3.10+, standard library only; SHA-256 ledger; optional HMAC-SHA256 approvals | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23448946.svg)](https://doi.org/10.5281/zenodo.23448946) |
+| [**qldpc_decoder_cpp**](https://github.com/sparkainlp-x/qldpc_decoder_cpp) | Quantum-error-correction research software | C++/HLS research scaffold for a qLDPC decoder, with Vitis HLS, Vivado and PetaLinux scripts **targeting** the AMD ZCU111 RFSoC board. The belief-propagation kernel is a placeholder; HLS synthesis, timing closure and HIL runs are **UNRUN** | C++20, CMake, Catch2, OpenMP, upstream [`ldpc`](https://github.com/quantumgizmos/ldpc) library; Vitis HLS / Vivado TCL scripts | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22985527.svg)](https://doi.org/10.5281/zenodo.22985527) |
+| [**OES-512 / OES-32**](https://github.com/sparkainlp-x/oes-resilience) (oes-resilience) | Telemetry triage | Reproducible benchmark: 512 channels split into sixteen 32-channel blocks, scored by the transparent one-line OES32 detector against z-score, EWMA and CUSUM baselines, with a seeded stress suite and replay evaluation. Mostly SYNTHETIC; on the preregistered NASA SMAP/MSL test OES32 did **not** meet its success criterion | Python, NumPy (only required dependency); CLI; CI on Python 3.10–3.13 | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
+| [**infinite-becoming**](https://github.com/sparkainlp-x/infinite-becoming) | Synthetic ecosystem game | Small browser-playable ecosystem toy: agents forage, reproduce and get sick on a reaction–diffusion substrate, with seeded deterministic runs. Synthetic and uncalibrated; no claim to simulate consciousness or predict real ecosystems; [play online](https://sparkainlp-x.github.io/infinite-becoming/) | JavaScript, HTML canvas, no third-party runtime dependencies; Node.js tests; GitHub Pages | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23423943.svg)](https://doi.org/10.5281/zenodo.23423943) |
+
+## Core research pillars
+
+### 1. Deterministic runtimes and audit trails
+
+- **OES-61440 tripwire** (in identity-runtime): 61,440 fixed threshold channels, grouped as 1,920 membranes of 32 channels (120 sectors × 4 supervisors × 4 membranes = 1,920; 1,920 × 32 = 61,440). Each channel compares a fixed weighted sum of four risk signals with a fixed threshold.
+- **Nothing learned:** weights and thresholds come from SHA-256 of the channel index. The settings are illustrative, not calibrated against incident data, and the tripwire is not a safety guarantee; a plain rule holds any action with effective risk of 0.5 or more for a human.
+- **Hash-chained ledger:** every step is appended to a JSONL ledger in which each entry's hash covers the previous entry's hash. Editing, reordering or deleting lines breaks verification. The ledger is tamper-evident, not tamper-proof.
+
+### 2. qLDPC decoder co-design (classical software)
+
+- C++ software and HLS automation scripts for a qLDPC decoder targeting the AMD ZCU111 RFSoC; see [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp).
+- CI builds and tests the portable C++ code. FPGA synthesis, timing closure and hardware-in-the-loop runs are UNRUN, and no qubits or quantum hardware are involved. There are no hardware results.
+
+### 3. Residual-telemetry triage
+
+- Deterministic residual-telemetry triage across the OES-32/OES-512 family: fixed 32-channel blocks, transparent scores and fail-closed input contracts, with one normative residual definition ([oes32-residual](https://github.com/sparkainlp-x/oes32-residual), ADR-001).
+- Detectors are benchmarked against simple baselines and the outcomes are published as measured, including negative results; see [Featured work](#featured-work).
 
 ## Project index
 
@@ -70,7 +108,7 @@ The profile and repository READMEs distinguish synthetic or theoretical results 
 
 | Repository | What it is | Evidence status | Archive |
 |---|---|---|---|
-| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.5.1 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, and a preregistered NASA SMAP/MSL comparison | Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
+| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.6.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, a preregistered NASA SMAP/MSL comparison, and adaptive methods (v0.6.0) | Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion; the locked OES-32-v2 re-attempt did **not** meet its predeclared improvement criterion | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23071166.svg)](https://doi.org/10.5281/zenodo.23071166) |
 | [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.0 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22985525.svg)](https://doi.org/10.5281/zenodo.22985525) |
 | [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.1 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.22998570.svg)](https://doi.org/10.5281/zenodo.22998570) |
 | [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.2 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23113851.svg)](https://doi.org/10.5281/zenodo.23113851) |
@@ -80,6 +118,12 @@ The profile and repository READMEs distinguish synthetic or theoretical results 
 
 ### Recent work
 
+- [identity-runtime](https://github.com/sparkainlp-x/identity-runtime): standard-library Python runtime for governed, reversible avatar personalities, with human approval quorums, expiring capability leases, the OES-61440 tripwire and a hash-chained ledger; 99 tests in CI; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/). [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946)
+- [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming): browser-playable synthetic ecosystem game on a reaction–diffusion substrate; uncalibrated; its frozen persistence regression is disclosed (1 of 5 seeds); [play online](https://sparkainlp-x.github.io/infinite-becoming/). [DOI 10.5281/zenodo.23423943](https://doi.org/10.5281/zenodo.23423943)
+- [world-holobridge](https://github.com/sparkainlp-x/world-holobridge): standard-library Python + SQLite reference prototype of a governance workflow for community-led cultural and spatial-media projects, with a bilingual browser plan generator; not legal advice; no community endorsement claimed (MIT OR Apache-2.0); [plan generator](https://sparkainlp-x.github.io/world-holobridge/). [DOI 10.5281/zenodo.23423941](https://doi.org/10.5281/zenodo.23423941)
+- [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab): rerunnable experiment cards that put my methods next to simple baselines, including where the baseline wins; every number copied from a committed source file; [live page](https://sparkainlp-x.github.io/spark-evidence-lab/). [DOI 10.5281/zenodo.23403169](https://doi.org/10.5281/zenodo.23403169)
+- [digital-to-wave-2-thz-validity](https://github.com/sparkainlp-x/digital-to-wave-2-thz-validity): engineering-validity study of the THz equations in Mun Seok Lee's *Digital to Wave* Part II preprint (equation inventory, dimensional checks, protocol-locked synthetic channel benchmark); SYNTHETIC; no physical, biological or safety claim. [DOI 10.5281/zenodo.23375690](https://doi.org/10.5281/zenodo.23375690)
+- [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab): software-only path from a stylized orbit timeline to a synthetic signed-wave payload, fixed-threshold readout, optional OES replay and evidence passport, plus offline binaural capture analysis; SYNTHETIC; orbit, spacecraft, quantum and acoustic hardware UNRUN. [DOI 10.5281/zenodo.23372536](https://doi.org/10.5281/zenodo.23372536)
 - [spark-membrane](https://github.com/sparkainlp-x/spark-membrane): fail-closed console that audits SYNTHETIC 32-channel frames against the OES repositories, pinned by commit SHA, with a hash-chained run trail, evidence passport and claims gate; thresholds uncalibrated; [demo page](https://sparkainlp-x.github.io/spark-membrane/). [DOI 10.5281/zenodo.23175490](https://doi.org/10.5281/zenodo.23175490)
 - [oes-telemetry-bench](https://github.com/sparkainlp-x/oes-telemetry-bench): offline replay bench for synchronized 32-channel OES32 telemetry frames, with a strict input contract and frozen thresholds; synthetic demo. [DOI 10.5281/zenodo.23175492](https://doi.org/10.5281/zenodo.23175492)
 - [residual-gradient-workbench](https://github.com/sparkainlp-x/residual-gradient-workbench): browser workbench that keeps an OES-32 residual replay and a classical thermoelectric generator model in separate lanes; [demo page](https://sparkainlp-x.github.io/residual-gradient-workbench/). [DOI 10.5281/zenodo.23187280](https://doi.org/10.5281/zenodo.23187280)
@@ -132,7 +176,14 @@ Repository documentation varies; check each README for its specific scope, limit
 
 </details>
 
-Selected projects have Zenodo records; use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+Nearly all public repositories (45 of 47) have Zenodo DOIs; the two without are this profile README and the shared `.github` community-files repository. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+
+## Engineering principles
+
+- **Minimal dependencies.** Many tools use only the Python standard library (for example identity-runtime, world-holobridge, evidence-passport and multi-quantum-oes), and infinite-becoming has no third-party runtime dependencies. Others depend on what the work needs: oes-resilience requires NumPy, qec-scaling-bench uses Stim and PyMatching, and qldpc_decoder_cpp builds against the upstream `ldpc` library.
+- **Tests and CI per repository.** Test suites and GitHub Actions workflows are maintained repository by repository; identity-runtime and oes-resilience, for example, run in CI on Python 3.10–3.13.
+- **Open licences, per repository.** Most repositories are AGPL-3.0-only with a commercial-licence option; some are MIT, and world-holobridge is MIT OR Apache-2.0. Each repository's LICENSE file is authoritative.
+- **Archived releases.** Released versions are archived on Zenodo with concept and version DOIs (see [Cite](#cite)).
 
 ## How I work
 
@@ -154,7 +205,7 @@ Contribution guidelines, the code of conduct, and the security policy are shared
 
 ## Cite
 
-Some archived repositories include `CITATION.cff` and Zenodo concept or version DOIs. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+Nearly all public repositories (45 of 47) have Zenodo concept and version DOIs, and archived repositories include `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## Contact
 
