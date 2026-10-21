@@ -26,6 +26,7 @@
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
   <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4">LinkedIn</a> ·
   <a href="https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f">Research notebook</a> ·
+  <a href="https://sparkainlp-x.github.io/holographic-thoughts/">Live demo: Holographic Thoughts</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374"><img src="https://img.shields.io/badge/ORCID-0009--0000--9778--5374-A6CE39?logo=orcid&logoColor=white" alt="ORCID iD 0009-0000-9778-5374" height="20" /></a> ·
   <a href="https://zenodo.org/communities/spark-ai-nlp/"><img src="https://img.shields.io/badge/Zenodo-Spark%20AI%20NLP-1682D4?logo=zenodo&logoColor=white" alt="Zenodo community: Spark AI NLP: Research Software" height="20" /></a><br/>
   Français (langue maternelle) · English (fluent)
@@ -214,5 +215,6 @@ Open to applied AI research and research-software roles (remote within Canada, o
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
 - LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
 - Research notebook: [Spark AI NLP notebook](https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f)
+- Live demo: [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive toy views; synthetic, classical simulation)
 - ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
 - Questions about code: open an issue in the relevant repository
