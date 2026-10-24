@@ -53,7 +53,7 @@ Six repositories that show the range of the work. Each README states its own sco
 
 ## Tracks
 
-Every public repository belongs to one of six tracks. Repositories stay separate so that each keeps its own licence, release history and Zenodo DOI.
+Every public repository belongs to one of six tracks. Repositories stay separate so that each keeps its own licence and release history, and its own Zenodo DOI once released.
 
 | Track | What is in it | Main repositories |
 |---|---|---|
