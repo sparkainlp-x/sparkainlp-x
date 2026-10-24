@@ -141,11 +141,11 @@ The profile and repository READMEs distinguish synthetic or theoretical results 
 | Repository | What it is | Evidence status | Archive |
 |---|---|---|---|
 | [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.6.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, a preregistered NASA SMAP/MSL comparison, and adaptive methods (v0.6.0) | Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion; the locked OES-32-v2 re-attempt did **not** meet its predeclared improvement criterion | [DOI 10.5281/zenodo.23071166](https://doi.org/10.5281/zenodo.23071166) |
-| [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.0 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [DOI 10.5281/zenodo.22985525](https://doi.org/10.5281/zenodo.22985525) |
+| [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.1 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [DOI 10.5281/zenodo.22985525](https://doi.org/10.5281/zenodo.22985525) |
 | [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.1 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [DOI 10.5281/zenodo.22998570](https://doi.org/10.5281/zenodo.22998570) |
 | [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.2 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [DOI 10.5281/zenodo.23113851](https://doi.org/10.5281/zenodo.23113851) |
 | [**digital-to-wave-testbench**](https://github.com/sparkainlp-x/digital-to-wave-testbench) · v0.4.2 | Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs) | All results SYNTHETIC; no physical validity claimed | [DOI 10.5281/zenodo.23122876](https://doi.org/10.5281/zenodo.23122876) |
-| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.0 | Offline stdlib audit tool: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256); records declared evidence, never re-scores it | Bundled OES-Resilience SMAP/MSL sample keeps the verdict: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/) | [DOI 10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143) |
+| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.1 | Offline stdlib audit tool: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256); records declared evidence, never re-scores it | Bundled OES-Resilience SMAP/MSL sample keeps the verdict: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/) | [DOI 10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143) |
 | [**quantum-claims-passport**](https://github.com/sparkainlp-x/quantum-claims-passport) · v0.1.0 | Offline claims audit for scientific communication: classifies public claims (a planned Swiss quantum-computer hub; a modeled 613 THz tubulin frequency band; a rat behavioral study) as announcement, computational model, animal behavioral result, hypothesis, or unsupported inference, with exact-SI conversions and no combined score | Source audit only, snapshot 2026-10-05; makes none of the audited claims; no affiliation with the institutions named; [report](https://sparkainlp-x.github.io/quantum-claims-passport/report.html) | [DOI 10.5281/zenodo.23167801](https://doi.org/10.5281/zenodo.23167801) |
 
 ### Recent work
@@ -208,7 +208,7 @@ Repository documentation varies; check each README for its specific scope, limit
 
 </details>
 
-Nearly all public repositories (45 of 47) have Zenodo DOIs; the two without are this profile README and the shared `.github` community-files repository. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+64 of the 75 public repositories have Zenodo DOIs (count as of 2026-10-24); the newest repositories are being released. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## Engineering principles
 
@@ -237,7 +237,7 @@ Contribution guidelines, the code of conduct, and the security policy are shared
 
 ## Cite
 
-Nearly all public repositories (45 of 47) have Zenodo concept and version DOIs, and archived repositories include `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+64 of the 75 public repositories have Zenodo concept and version DOIs (count as of 2026-10-24), and each released repository includes `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## Contact
 
