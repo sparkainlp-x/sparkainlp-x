@@ -38,16 +38,54 @@
 
 Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, two offline audit tools (Evidence Passport for run-level evidence, Quantum Claims Evidence Passport for public claims against their sources), and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
 
-## Ecosystem overview
+## Start here
 
-Four projects that show the main strands of the work. Each repository's README defines its own scope and evidence status.
+Six repositories that show the range of the work. Each README states its own scope, limits and evidence status.
 
-| Project | Domain | What it is | Stack | Archive |
-|---|---|---|---|---|
-| [**identity-runtime**](https://github.com/sparkainlp-x/identity-runtime) | Runtime governance and audit | Governed, reversible avatar personalities: human-approved versions, short revocable capability leases, the OES-61440 tripwire and a hash-chained audit ledger. Research prototype; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/) | Python 3.10+, standard library only; SHA-256 ledger; optional HMAC-SHA256 approvals | [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946) |
-| [**qldpc_decoder_cpp**](https://github.com/sparkainlp-x/qldpc_decoder_cpp) | Quantum-error-correction research software | C++/HLS research scaffold for a qLDPC decoder, with Vitis HLS, Vivado and PetaLinux scripts **targeting** the AMD ZCU111 RFSoC board. The belief-propagation kernel is a placeholder; HLS synthesis, timing closure and HIL runs are **UNRUN** | C++20, CMake, Catch2, OpenMP, upstream [`ldpc`](https://github.com/quantumgizmos/ldpc) library; Vitis HLS / Vivado TCL scripts | [DOI 10.5281/zenodo.22985527](https://doi.org/10.5281/zenodo.22985527) |
-| [**OES-512 / OES-32**](https://github.com/sparkainlp-x/oes-resilience) (oes-resilience) | Telemetry triage | Reproducible benchmark: 512 channels split into sixteen 32-channel blocks, scored by the transparent one-line OES32 detector against z-score, EWMA and CUSUM baselines, with a seeded stress suite and replay evaluation. Mostly SYNTHETIC; on the preregistered NASA SMAP/MSL test OES32 did **not** meet its success criterion | Python, NumPy (only required dependency); CLI; CI on Python 3.10–3.13 | [DOI 10.5281/zenodo.23071166](https://doi.org/10.5281/zenodo.23071166) |
-| [**infinite-becoming**](https://github.com/sparkainlp-x/infinite-becoming) | Synthetic ecosystem game | Small browser-playable ecosystem toy: agents forage, reproduce and get sick on a reaction–diffusion substrate, with seeded deterministic runs. Synthetic and uncalibrated; no claim to simulate consciousness or predict real ecosystems; [play online](https://sparkainlp-x.github.io/infinite-becoming/) | JavaScript, HTML canvas, no third-party runtime dependencies; Node.js tests; GitHub Pages | [DOI 10.5281/zenodo.23423943](https://doi.org/10.5281/zenodo.23423943) |
+| Repository | What it shows | Maturity |
+|---|---|---|
+| [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab) | Rerunnable experiment cards that put my methods next to simple baselines, including where the baseline wins | Demonstrated (SYNTHETIC) |
+| [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts) | Five interactive toy views of classical holographic-membrane models, with a Python reference model for each ([live page](https://sparkainlp-x.github.io/holographic-thoughts/)) | Prototype (SYNTHETIC) |
+| [crystallize](https://github.com/sparkainlp-x/crystallize) | A two-minute browser game about evidence, calibration and replication, in English and French ([play](https://sparkainlp-x.github.io/crystallize/)) | Prototype (SYNTHETIC) |
+| [failure-capsules](https://github.com/sparkainlp-x/failure-capsules) | Small JSON records that capture a failed run so it can be replayed and checked offline | Prototype |
+| [oes-resilience](https://github.com/sparkainlp-x/oes-resilience) | Telemetry anomaly benchmark with a preregistered NASA SMAP/MSL comparison; the OES32 detector did not meet its success criterion and the README says so | Demonstrated (SYNTHETIC baseline; REPORTED comparison) |
+| [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport) | Offline audit that sorts public claims into announcement, model, behavioural result, hypothesis and unsupported inference ([live page](https://sparkainlp-x.github.io/quantum-claims-passport/)) | Demonstrated |
+
+## Tracks
+
+Every public repository belongs to one of six tracks. Repositories stay separate so that each keeps its own licence, release history and Zenodo DOI.
+
+| Track | What is in it | Main repositories |
+|---|---|---|
+| Membrane and crystallization | Classical models of holographic memory, streaming PCA with a Hebbian running average, committees, capacity limits, refusal gates and reward contests between agents; several negative results | [membrane-crystallization](https://github.com/sparkainlp-x/membrane-crystallization), [crystallization-contest](https://github.com/sparkainlp-x/crystallization-contest), [crystal-bci](https://github.com/sparkainlp-x/crystal-bci), [membrane-committee](https://github.com/sparkainlp-x/membrane-committee), [refusing-membrane](https://github.com/sparkainlp-x/refusing-membrane), [membrane-capacity](https://github.com/sparkainlp-x/membrane-capacity) |
+| OES telemetry and C++/HLS prototypes | The OES-32 / OES-512 residual-latch family, benchmarks, a normative residual definition and HLS testbenches | [oes-resilience](https://github.com/sparkainlp-x/oes-resilience), [oes32-residual](https://github.com/sparkainlp-x/oes32-residual), [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) |
+| Quantum-style classical simulation and claims | Classical emulations and toy models, and tools that audit how claims are worded | [quantum-projection](https://github.com/sparkainlp-x/quantum-projection), [claims-layer](https://github.com/sparkainlp-x/claims-layer), [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport), [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
+| Games and education | Browser games and teaching prototypes, seeded and offline | [crystallize](https://github.com/sparkainlp-x/crystallize), [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming), [empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory), [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) |
+| Holography and Sparky | Visual and interface prototypes, governance for community media | [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts), [sparky-synthetic-grove](https://github.com/sparkainlp-x/sparky-synthetic-grove), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom) |
+| Reliability, evidence and tooling | Evidence records, provenance, replay, guardrails and small offline tools | [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab), [failure-capsules](https://github.com/sparkainlp-x/failure-capsules), [evidence-passport](https://github.com/sparkainlp-x/evidence-passport), [measurement-trail](https://github.com/sparkainlp-x/measurement-trail), [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) |
+
+Repositories not named here are listed in the sections below and on the [repository list](https://github.com/sparkainlp-x?tab=repositories).
+
+## Maturity ladder
+
+Each project is placed on one rung. The rung says what exists today, not what is hoped for.
+
+| Rung | Meaning |
+|---|---|
+| Demonstrated | The code runs, the tests pass in CI, and the stated result was reproduced from a fixed seed or a named dataset |
+| Prototype | A working simulation or browser demo with tests, but no measurement outside the repository |
+| Concept | An architectural idea, a model or a proposed measurement, with little or no running code |
+| Target | A design goal that has not been reached or measured |
+
+The rungs sit on top of the evidence tags used in every repository: SYNTHETIC (generated inputs), REPORTED (measured, with the source and protocol named), TARGET (a design goal) and UNRUN (scripts exist, the run has not happened).
+
+## Claims policy
+
+- Everything here is classical software. Results are SYNTHETIC unless a README names a measured dataset and its protocol, and then they are tagged REPORTED.
+- No repository reports a result from quantum hardware, a physical membrane, a medical device or a field deployment.
+- Nothing is described as established beyond what its tests and data support. Negative results are published as measured.
+- Unrun work (hardware synthesis, hardware-in-the-loop, independent review) is labelled UNRUN, and design goals are labelled TARGET.
+- If a statement here or in a repository looks unsupported, open a Claim correction issue; the template is in [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
 
 ## Core research pillars
 
