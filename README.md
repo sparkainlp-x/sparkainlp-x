@@ -241,7 +241,7 @@ Contribution guidelines, the code of conduct, and the security policy are shared
 
 ## Acknowledgements
 
-Lee, Laha and Belkadi are acknowledged as collaborators whose ideas and discussion prompted some of the independent classical studies here. This is an acknowledgement only: it implies no endorsement of these repositories and no authorship. The software is by Jean-François Brisson, and the repositories are independent formalizations.
+Mun Seok Lee and Somnath Laha are acknowledged as collaborators. Lee's *Digital to Wave* preprints and packages received under his name are the source for the Digital-to-Wave repositories and the membrane-related repositories that say so in their Provenance sections. Laha's related discussion of a satellite concept motivated the framing of [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab). This is an acknowledgement only: it implies no endorsement of these repositories and no authorship. The software is by Jean-François Brisson, and each repository's README states what it derives from.
 
 ## Contact
 
