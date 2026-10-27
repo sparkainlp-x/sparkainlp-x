@@ -210,7 +210,7 @@ Repository documentation varies; check each README for its specific scope, limit
 
 </details>
 
-64 of the 75 public repositories have Zenodo DOIs (count as of 2026-10-24); the newest repositories are being released. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+68 of the 78 code repositories have Zenodo DOIs (checked 2026-10-27); the newest repositories are being released. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## Engineering principles
 
@@ -239,7 +239,7 @@ Contribution guidelines, the code of conduct, and the security policy are shared
 
 ## Cite
 
-64 of the 75 public repositories have Zenodo concept and version DOIs (count as of 2026-10-24), and each released repository includes `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+68 of the 78 code repositories have Zenodo concept and version DOIs (checked 2026-10-27), and each released repository includes `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 ## Acknowledgements
 
