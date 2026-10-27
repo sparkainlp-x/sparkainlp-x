@@ -25,8 +25,9 @@
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
   <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4">LinkedIn</a> ·
-  <a href="https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f">Research notebook</a> ·
+  <a href="https://sparkainlp-x.github.io/spark-evidence-lab/">Spark Evidence Lab</a> ·
   <a href="https://sparkainlp-x.github.io/holographic-thoughts/">Live demo: Holographic Thoughts</a> ·
+  <a href="https://sparkainlp-x.github.io/waveholo/game/">Browser game: WaveHolo</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374">ORCID</a> ·
   <a href="https://zenodo.org/communities/spark-ai-nlp/">Zenodo community</a><br/>
   Français (langue maternelle) · English (fluent)
@@ -61,7 +62,7 @@ Every public repository belongs to one of six tracks. Repositories stay separate
 | OES telemetry and C++/HLS prototypes | The OES-32 / OES-512 residual-latch family, benchmarks, a normative residual definition and HLS testbenches | [oes-resilience](https://github.com/sparkainlp-x/oes-resilience), [oes32-residual](https://github.com/sparkainlp-x/oes32-residual), [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) |
 | Quantum-style classical simulation and claims | Classical emulations and toy models, and tools that audit how claims are worded | [quantum-projection](https://github.com/sparkainlp-x/quantum-projection), [claims-layer](https://github.com/sparkainlp-x/claims-layer), [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport), [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
 | Games and education | Browser games and teaching prototypes, seeded and offline | [crystallize](https://github.com/sparkainlp-x/crystallize), [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming), [empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory), [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) |
-| Holography and Sparky | Visual and interface prototypes, governance for community media | [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts), [sparky-synthetic-grove](https://github.com/sparkainlp-x/sparky-synthetic-grove), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom) |
+| Holography and Sparky | Off-axis digital holography software, visual and interface prototypes, governance for community media | [waveholo](https://github.com/sparkainlp-x/waveholo), [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts), [sparky-synthetic-grove](https://github.com/sparkainlp-x/sparky-synthetic-grove), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom) |
 | Reliability, evidence and tooling | Evidence records, provenance, replay, guardrails and small offline tools | [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab), [failure-capsules](https://github.com/sparkainlp-x/failure-capsules), [evidence-passport](https://github.com/sparkainlp-x/evidence-passport), [measurement-trail](https://github.com/sparkainlp-x/measurement-trail), [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) |
 
 Repositories not named here are listed in the sections below and on the [repository list](https://github.com/sparkainlp-x?tab=repositories).
@@ -150,6 +151,7 @@ The profile and repository READMEs distinguish synthetic or theoretical results 
 
 ### Recent work
 
+- [waveholo](https://github.com/sparkainlp-x/waveholo): Python implementation of off-axis digital holography (record, reconstruct, estimate the focus distance) with a browser game; pipeline results SYNTHETIC; real-data check is a slope check on 530 microscope holograms at 6 of 100 stage positions, not an absolute-focus test; AGPL-3.0-only; v0.1.5; [play online](https://sparkainlp-x.github.io/waveholo/game/). [DOI 10.5281/zenodo.23653721](https://doi.org/10.5281/zenodo.23653721)
 - [identity-runtime](https://github.com/sparkainlp-x/identity-runtime): standard-library Python runtime for governed, reversible avatar personalities, with human approval quorums, expiring capability leases, the OES-61440 tripwire and a hash-chained ledger; 99 tests in CI; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/). [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946)
 - [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming): browser-playable synthetic ecosystem game on a reaction–diffusion substrate; uncalibrated; its frozen persistence regression is disclosed (1 of 5 seeds); [play online](https://sparkainlp-x.github.io/infinite-becoming/). [DOI 10.5281/zenodo.23423943](https://doi.org/10.5281/zenodo.23423943)
 - [world-holobridge](https://github.com/sparkainlp-x/world-holobridge): standard-library Python + SQLite reference prototype of a governance workflow for community-led cultural and spatial-media projects, with a bilingual browser plan generator; not legal advice; no community endorsement claimed (MIT OR Apache-2.0); [plan generator](https://sparkainlp-x.github.io/world-holobridge/). [DOI 10.5281/zenodo.23423941](https://doi.org/10.5281/zenodo.23423941)
@@ -249,7 +251,8 @@ Open to applied AI research and research-software roles (remote within Canada, o
 
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
 - LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
-- Research notebook: [Spark AI NLP notebook](https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f)
+- Experiment cards: [Spark Evidence Lab](https://sparkainlp-x.github.io/spark-evidence-lab/) (rerunnable, synthetic, with baselines)
 - Live demo: [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive toy views; synthetic, classical simulation)
+- Browser game: [WaveHolo](https://sparkainlp-x.github.io/waveholo/game/) (focus estimation on synthetic holograms)
 - ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
 - Questions about code: open an issue in the relevant repository
