@@ -6,21 +6,23 @@
   />
 </p>
 
-<div align="center">
-
 # Spark AI NLP
 
-### Deterministic runtimes, quantum-error-correction research software and telemetry integrity tools
+I build reproducible research software for telemetry analysis, evidence auditing, and interactive learning.
 
-*Independent research lead and founder: Jean-François Brisson*<br/>
-*Fredericton, New Brunswick, Canada*<br/>
-*Classical software prioritising verifiability, audit transparency and minimal dependencies.*
+I’m Jean-François Brisson, founder of Spark AI NLP, a disability-led research-software initiative based in Fredericton, New Brunswick, Canada.
 
-</div>
+My projects make assumptions, baseline comparisons, and failure cases explicit. The portfolio includes classical simulations, browser demos, offline audit tools, and C++/HLS prototypes. Each repository documents its own scope and evidence status.
 
-<p align="center">
-  Disability-led research software: telemetry research, C++/HLS prototypes, RAG guardrails, and offline evidence-audit tools, with scope and evidence status documented per project.
-</p>
+## Start here
+
+- Explore the evidence: Spark Evidence Lab — experiments, baselines, and rerun instructions.
+- Try a demo: Thought-Input Game — draw a pattern and explore associative recall.
+- Inspect an engineering project: OES-32 HLS — a software-tested C++ prototype; FPGA synthesis remains unrun.
+
+Open to research-software and applied-AI roles in Canada, independent replication, and focused technical collaborations.
+
+## Contact / links
 
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
@@ -32,41 +34,20 @@
   Français (langue maternelle) · English (fluent)
 </p>
 
-> **Open to work:** applied AI research and research-software roles, remote within Canada or on site in Fredericton. Contact details are [below](#contact).
+- Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
+- LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
+- Research notebook: [Spark AI NLP notebook](https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f)
+- Live demo: [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive toy views; synthetic, classical simulation)
+- ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
+- Questions about code: open an issue in the relevant repository
 
-## About
+Acknowledgements: Mun Seok Lee and Somnath Laha are acknowledged as collaborators. Lee's *Digital to Wave* preprints and packages received under his name are the source for the Digital-to-Wave repositories and the membrane-related repositories that say so in their Provenance sections. Laha's related discussion of a satellite concept motivated the framing of [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab). This is an acknowledgement only: it implies no endorsement of these repositories and no authorship. The software is by Jean-François Brisson, and each repository's README states what it derives from.
 
-Spark AI NLP is a disability-led research-software company based in Fredericton, New Brunswick, Canada. The public repositories are **research prototypes**: a reproducible telemetry anomaly-detection benchmark, the OES-32/OES-512 residual-latch family, C++/HLS kernels, a source-grounded RAG guardrail, two offline audit tools (Evidence Passport for run-level evidence, Quantum Claims Evidence Passport for public claims against their sources), and small offline tools for provenance and consent-first data sharing. They are not hardware products, field products, or medical products, and they do not report results on quantum hardware.
+## Open to
 
-## Start here
+Applied AI research and research-software roles, remote within Canada or on site in Fredericton; collaboration with research groups, FPGA/decoder engineers, and accessibility-focused partners; independent replication and focused technical collaborations.
 
-Six repositories that show the range of the work. Each README states its own scope, limits and evidence status.
-
-| Repository | What it shows | Maturity |
-|---|---|---|
-| [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab) | Rerunnable experiment cards that put my methods next to simple baselines, including where the baseline wins | Demonstrated (SYNTHETIC) |
-| [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts) | Five interactive toy views of classical holographic-membrane models, with a Python reference model for each ([live page](https://sparkainlp-x.github.io/holographic-thoughts/)) | Prototype (SYNTHETIC) |
-| [crystallize](https://github.com/sparkainlp-x/crystallize) | A two-minute browser game about evidence, calibration and replication, in English and French ([play](https://sparkainlp-x.github.io/crystallize/)) | Prototype (SYNTHETIC) |
-| [failure-capsules](https://github.com/sparkainlp-x/failure-capsules) | Small JSON records that capture a failed run so it can be replayed and checked offline | Prototype |
-| [oes-resilience](https://github.com/sparkainlp-x/oes-resilience) | Telemetry anomaly benchmark with a preregistered NASA SMAP/MSL comparison; the OES32 detector did not meet its success criterion and the README says so | Demonstrated (SYNTHETIC baseline; REPORTED comparison) |
-| [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport) | Offline audit that sorts public claims into announcement, model, behavioural result, hypothesis and unsupported inference ([live page](https://sparkainlp-x.github.io/quantum-claims-passport/)) | Demonstrated |
-
-## Tracks
-
-Every public repository belongs to one of six tracks. Repositories stay separate so that each keeps its own licence and release history, and its own Zenodo DOI once released.
-
-| Track | What is in it | Main repositories |
-|---|---|---|
-| Membrane and crystallization | Classical models of holographic memory, streaming PCA with a Hebbian running average, committees, capacity limits, refusal gates and reward contests between agents; a heart-shaped associative-memory toy and a sonification of a phase-oscillator ring, both SYNTHETIC; several negative results | [membrane-crystallization](https://github.com/sparkainlp-x/membrane-crystallization), [crystallization-contest](https://github.com/sparkainlp-x/crystallization-contest), [crystal-bci](https://github.com/sparkainlp-x/crystal-bci), [membrane-committee](https://github.com/sparkainlp-x/membrane-committee), [refusing-membrane](https://github.com/sparkainlp-x/refusing-membrane), [membrane-capacity](https://github.com/sparkainlp-x/membrane-capacity), [membrane-heart](https://github.com/sparkainlp-x/membrane-heart), [membrane-listen](https://github.com/sparkainlp-x/membrane-listen) |
-| OES telemetry and C++/HLS prototypes | The OES-32 / OES-512 residual-latch family, benchmarks, a normative residual definition and HLS testbenches | [oes-resilience](https://github.com/sparkainlp-x/oes-resilience), [oes32-residual](https://github.com/sparkainlp-x/oes32-residual), [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) |
-| Quantum-style classical simulation and claims | Classical emulations and toy models, and tools that audit how claims are worded | [quantum-projection](https://github.com/sparkainlp-x/quantum-projection), [claims-layer](https://github.com/sparkainlp-x/claims-layer), [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport), [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
-| Games and education | Browser games and teaching prototypes, seeded and offline | [crystallize](https://github.com/sparkainlp-x/crystallize), [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming), [empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory), [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo) |
-| Holography and Sparky | Visual and interface prototypes, governance for community media | [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts), [sparky-synthetic-grove](https://github.com/sparkainlp-x/sparky-synthetic-grove), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom) |
-| Reliability, evidence and tooling | Evidence records, provenance, replay, guardrails and small offline tools | [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab), [failure-capsules](https://github.com/sparkainlp-x/failure-capsules), [evidence-passport](https://github.com/sparkainlp-x/evidence-passport), [measurement-trail](https://github.com/sparkainlp-x/measurement-trail), [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) |
-
-Repositories not named here are listed in the sections below and on the [repository list](https://github.com/sparkainlp-x?tab=repositories).
-
-## Maturity ladder
+## Evidence and maturity labels
 
 Each project is placed on one rung. The rung says what exists today, not what is hoped for.
 
@@ -77,9 +58,16 @@ Each project is placed on one rung. The rung says what exists today, not what is
 | Concept | An architectural idea, a model or a proposed measurement, with little or no running code |
 | Target | A design goal that has not been reached or measured |
 
-The rungs sit on top of the evidence tags used in every repository: SYNTHETIC (generated inputs), REPORTED (measured, with the source and protocol named), TARGET (a design goal) and UNRUN (scripts exist, the run has not happened).
+The rungs sit on top of the evidence tags used in every repository:
 
-## Claims policy
+| Tag | Meaning |
+|---|---|
+| **SYNTHETIC** | Produced by our own simulation or tests on generated inputs |
+| **REPORTED** | A project result based on identified measurements or benchmark data. The README states whether data were collected for this project or pre-existing, names the source and conditions/protocol, and says whether independently reproduced |
+| **TARGET** | A design goal; not yet achieved or measured |
+| **UNRUN** | Tooling or scripts exist; the run has not been performed |
+
+Claims policy:
 
 - Everything here is classical software. Results are SYNTHETIC unless a README names a measured dataset and its protocol, and then they are tagged REPORTED.
 - No repository reports a result from quantum hardware, a physical membrane, a medical device or a field deployment.
@@ -87,27 +75,116 @@ The rungs sit on top of the evidence tags used in every repository: SYNTHETIC (g
 - Unrun work (hardware synthesis, hardware-in-the-loop, independent review) is labelled UNRUN, and design goals are labelled TARGET.
 - If a statement here or in a repository looks unsupported, open a Claim correction issue; the template is in [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
 
-## Core research pillars
+How this work is done, in brief: contracts first (each definition lives in one normative place with executable tests; for OES-32 that is [oes32-residual@b77b612](https://github.com/sparkainlp-x/oes32-residual/tree/b77b61254f15778c6ae221843dceac7a8571158e) (ADR-001)); fail-closed where specified (selected READMEs label unrun or unmeasured work, including negative outcomes where evaluations were performed); minimal dependencies where the work allows (many tools use only the Python standard library, for example identity-runtime, world-holobridge, evidence-passport and multi-quantum-oes; oes-resilience requires NumPy, qec-scaling-bench uses Stim and PyMatching, and qldpc_decoder_cpp builds against the upstream `ldpc` library); tests and CI per repository; open licences per repository (most AGPL-3.0-only with a commercial-licence option; some MIT; world-holobridge MIT OR Apache-2.0; each repository's LICENSE file is authoritative); released versions archived on Zenodo with concept and version DOIs. Accessibility first: ask for alternative formats by opening an issue in any repository. Contribution guidelines, the code of conduct, and the security policy are shared across all repositories: [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
 
-### 1. Deterministic runtimes and audit trails
+## Core project tracks
 
-- **OES-61440 tripwire** (in identity-runtime): 61,440 fixed threshold channels, grouped as 1,920 membranes of 32 channels (120 sectors × 4 supervisors × 4 membranes = 1,920; 1,920 × 32 = 61,440). Each channel compares a fixed weighted sum of four risk signals with a fixed threshold.
-- **Nothing learned:** weights and thresholds come from SHA-256 of the channel index. The settings are illustrative, not calibrated against incident data, and the tripwire is not a safety guarantee; a plain rule holds any action with effective risk of 0.5 or more for a human.
-- **Hash-chained ledger:** every step is appended to a JSONL ledger in which each entry's hash covers the previous entry's hash. Editing, reordering or deleting lines breaks verification. The ledger is tamper-evident, not tamper-proof.
+Every public repository belongs to one of six tracks. Repositories stay separate so that each keeps its own licence and release history, and its own Zenodo DOI once released. Repositories not named here are listed in the Full project index below and on the [repository list](https://github.com/sparkainlp-x?tab=repositories).
 
-### 2. qLDPC decoder co-design (classical software)
+### 1. Evidence and reproducibility
 
-- C++ software and HLS automation scripts for a qLDPC decoder targeting the AMD ZCU111 RFSoC; see [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp).
-- CI builds and tests the portable C++ code. FPGA synthesis, timing closure and hardware-in-the-loop runs are UNRUN, and no qubits or quantum hardware are involved. There are no hardware results.
+Evidence records, provenance, replay, guardrails and small offline tools, plus the deterministic runtimes and audit trails that make a run checkable: the OES-61440 tripwire (in identity-runtime: 61,440 fixed threshold channels, grouped as 1,920 membranes of 32 channels; weights and thresholds come from SHA-256 of the channel index, are illustrative, not calibrated against incident data, and the tripwire is not a safety guarantee; a plain rule holds any action with effective risk of 0.5 or more for a human) and a hash-chained ledger (every step appended to a JSONL ledger in which each entry's hash covers the previous entry's hash; tamper-evident, not tamper-proof).
 
-### 3. Residual-telemetry triage
+Main repositories: [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab), [failure-capsules](https://github.com/sparkainlp-x/failure-capsules), [evidence-passport](https://github.com/sparkainlp-x/evidence-passport), [measurement-trail](https://github.com/sparkainlp-x/measurement-trail), [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail), [identity-runtime](https://github.com/sparkainlp-x/identity-runtime)
 
-- Deterministic residual-telemetry triage across the OES-32/OES-512 family: fixed 32-channel blocks, transparent scores and fail-closed input contracts, with one normative residual definition ([oes32-residual](https://github.com/sparkainlp-x/oes32-residual), ADR-001).
-- Detectors are benchmarked against simple baselines and the outcomes are published as measured, including negative results; see [Featured work](#featured-work).
+### 2. Telemetry anomaly detection
 
-## Project index
+The OES-32 / OES-512 residual-latch family, benchmarks, a normative residual definition and HLS testbenches. Deterministic residual-telemetry triage: fixed 32-channel blocks, transparent scores and fail-closed input contracts, with one normative residual definition ([oes32-residual](https://github.com/sparkainlp-x/oes32-residual), ADR-001). Detectors are benchmarked against simple baselines and the outcomes are published as measured, including negative results.
+
+Main repositories: [oes-resilience](https://github.com/sparkainlp-x/oes-resilience), [oes32-residual](https://github.com/sparkainlp-x/oes32-residual), [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [oes512q-latch](https://github.com/sparkainlp-x/oes512q-latch), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp)
+
+### 3. Holographic and interactive systems
+
+Classical models of holographic memory, streaming PCA with a Hebbian running average, committees, capacity limits, refusal gates and reward contests between agents; a heart-shaped associative-memory toy and a sonification of a phase-oscillator ring, both SYNTHETIC; several negative results. Visual and interface prototypes, governance for community media, and browser games and teaching prototypes, seeded and offline.
+
+Main repositories: [membrane-crystallization](https://github.com/sparkainlp-x/membrane-crystallization), [crystallization-contest](https://github.com/sparkainlp-x/crystallization-contest), [membrane-committee](https://github.com/sparkainlp-x/membrane-committee), [refusing-membrane](https://github.com/sparkainlp-x/refusing-membrane), [membrane-capacity](https://github.com/sparkainlp-x/membrane-capacity), [membrane-heart](https://github.com/sparkainlp-x/membrane-heart), [membrane-listen](https://github.com/sparkainlp-x/membrane-listen), [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts), [sparky-synthetic-grove](https://github.com/sparkainlp-x/sparky-synthetic-grove), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom), [crystallize](https://github.com/sparkainlp-x/crystallize), [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming), [empty-state-observatory](https://github.com/sparkainlp-x/empty-state-observatory), [address-phase-demo](https://github.com/sparkainlp-x/address-phase-demo), [thought-input-game](https://github.com/sparkainlp-x/thought-input-game)
+
+Note on a repository name: [crystal-bci](https://github.com/sparkainlp-x/crystal-bci) is a repository name only; nothing here describes what that name abbreviates.
+
+### 4. Quantum-inspired experiments
+
+Classical emulations and toy models, and tools that audit how claims are worded. All results here are classical software; no quantum hardware is involved.
+
+Main repositories: [quantum-projection](https://github.com/sparkainlp-x/quantum-projection), [claims-layer](https://github.com/sparkainlp-x/claims-layer), [quantum-claims-passport](https://github.com/sparkainlp-x/quantum-claims-passport), [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench)
+
+### 5. C++ / HLS engineering
+
+C++ software and HLS automation scripts for a qLDPC decoder targeting the AMD ZCU111 RFSoC; see [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp). CI builds and tests the portable C++ code. FPGA synthesis, timing closure and hardware-in-the-loop runs are UNRUN, and no qubits or quantum hardware are involved. There are no hardware results.
+
+Main repositories: [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp)
+
+### 6. Community and accessibility
+
+Governance for community media and accessibility-first work: a reference prototype of a governance workflow for community-led cultural and spatial-media projects, with a bilingual browser plan generator (not legal advice; no community endorsement claimed), and the accessibility-first practice described under Evidence and maturity labels above.
+
+Main repositories: [world-holobridge](https://github.com/sparkainlp-x/world-holobridge), [signal-loom](https://github.com/sparkainlp-x/signal-loom)
+
+## Latest release snapshot
+
+Featured repositories, in the five-line format (name; purpose; demonstrated result or current status; key limitation or unrun step; link). Results below are carried over from the existing profile table; they were not newly re-verified repo by repo for this restructure.
+
+- **oes-resilience** · v0.6.0
+  - Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, a preregistered NASA SMAP/MSL comparison, and adaptive methods (v0.6.0).
+  - Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion; the locked OES-32-v2 re-attempt did **not** meet its predeclared improvement criterion.
+  - Limitation: the SMAP/MSL comparison is a negative result, not a success.
+  - [Repository](https://github.com/sparkainlp-x/oes-resilience) · [DOI 10.5281/zenodo.23071166](https://doi.org/10.5281/zenodo.23071166)
+- **oes32-hls** · v0.3.1
+  - C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model.
+  - `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli.
+  - Unrun step: FPGA synthesis UNRUN (ZCU111 is a TARGET).
+  - [Repository](https://github.com/sparkainlp-x/oes32-hls) · [DOI 10.5281/zenodo.22985525](https://doi.org/10.5281/zenodo.22985525)
+- **oes512q-latch** · v0.2.1
+  - OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB).
+  - NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code.
+  - Limitation: mixed NAB results, not a uniform win.
+  - [Repository](https://github.com/sparkainlp-x/oes512q-latch) · [DOI 10.5281/zenodo.22998570](https://doi.org/10.5281/zenodo.22998570)
+- **multi-quantum-oes** · v0.1.2
+  - Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab.
+  - Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU.
+  - Limitation: the stress evaluation did not support the toy lab's premise.
+  - [Repository](https://github.com/sparkainlp-x/multi-quantum-oes) · [DOI 10.5281/zenodo.23113851](https://doi.org/10.5281/zenodo.23113851)
+- **digital-to-wave-testbench** · v0.4.2
+  - Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs).
+  - All results SYNTHETIC; no physical validity claimed.
+  - Limitation: synthetic only; no physical validity claim.
+  - [Repository](https://github.com/sparkainlp-x/digital-to-wave-testbench) · [DOI 10.5281/zenodo.23122876](https://doi.org/10.5281/zenodo.23122876)
+- **evidence-passport** · v0.1.1
+  - Offline stdlib audit tool: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256); records declared evidence, never re-scores it.
+  - Bundled OES-Resilience SMAP/MSL sample keeps the verdict: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/).
+  - Limitation: it records evidence, it does not re-score or validate it.
+  - [Repository](https://github.com/sparkainlp-x/evidence-passport) · [DOI 10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143)
+- **quantum-claims-passport** · v0.1.0
+  - Offline claims audit for scientific communication: classifies public claims (a planned Swiss quantum-computer hub; a modeled 613 THz tubulin frequency band; a rat behavioral study) as announcement, computational model, animal behavioral result, hypothesis, or unsupported inference, with exact-SI conversions and no combined score.
+  - Source audit only, snapshot 2026-10-05; makes none of the audited claims; no affiliation with the institutions named; [report](https://sparkainlp-x.github.io/quantum-claims-passport/report.html).
+  - Limitation: a source audit of wording, not a re-experiment.
+  - [Repository](https://github.com/sparkainlp-x/quantum-claims-passport) · [DOI 10.5281/zenodo.23167801](https://doi.org/10.5281/zenodo.23167801)
+
+Recent work (from the previous profile, unchanged in substance):
+
+- [membrane-listen](https://github.com/sparkainlp-x/membrane-listen) · v0.1.0: SYNTHETIC sonification of a classical phase-oscillator ring (standard-library Python, AGPL-3.0-only); a pre-registered study with confidence intervals in which 2 of 23 hypotheses were not supported; not a recording, not a medical model; no listening test was run. [DOI 10.5281/zenodo.23687758](https://doi.org/10.5281/zenodo.23687758)
+- [membrane-heart](https://github.com/sparkainlp-x/membrane-heart) · v0.1.0: SYNTHETIC toy in which a heart-shaped network of 64 simulated neurons carries a phase wave stored in an associative memory with a calibrated gate that names or refuses a probe (standard-library Python, AGPL-3.0-only); not a medical model, not a diagnosis. [DOI 10.5281/zenodo.23680672](https://doi.org/10.5281/zenodo.23680672)
+- [identity-runtime](https://github.com/sparkainlp-x/identity-runtime): standard-library Python runtime for governed, reversible avatar personalities, with human approval quorums, expiring capability leases, the OES-61440 tripwire and a hash-chained ledger; 99 tests in CI; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/). [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946)
+- [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming): browser-playable synthetic ecosystem game on a reaction–diffusion substrate; uncalibrated; its frozen persistence regression is disclosed (1 of 5 seeds); [play online](https://sparkainlp-x.github.io/infinite-becoming/). [DOI 10.5281/zenodo.23423943](https://doi.org/10.5281/zenodo.23423943)
+- [world-holobridge](https://github.com/sparkainlp-x/world-holobridge): standard-library Python + SQLite reference prototype of a governance workflow for community-led cultural and spatial-media projects, with a bilingual browser plan generator; not legal advice; no community endorsement claimed (MIT OR Apache-2.0); [plan generator](https://sparkainlp-x.github.io/world-holobridge/). [DOI 10.5281/zenodo.23423941](https://doi.org/10.5281/zenodo.23423941)
+- [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab): rerunnable experiment cards that put my methods next to simple baselines, including where the baseline wins; every number copied from a committed source file; [live page](https://sparkainlp-x.github.io/spark-evidence-lab/). [DOI 10.5281/zenodo.23403169](https://doi.org/10.5281/zenodo.23403169)
+- [digital-to-wave-2-thz-validity](https://github.com/sparkainlp-x/digital-to-wave-2-thz-validity): engineering-validity study of the THz equations in the *Digital to Wave* Part II preprint (equation inventory, dimensional checks, protocol-locked synthetic channel benchmark); SYNTHETIC; no physical, biological or safety claim. [DOI 10.5281/zenodo.23375690](https://doi.org/10.5281/zenodo.23375690)
+- [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab): software-only path from a stylized orbit timeline to a synthetic signed-wave payload, fixed-threshold readout, optional OES replay and evidence passport, plus offline binaural capture analysis; SYNTHETIC; orbit, spacecraft, quantum and acoustic hardware UNRUN. [DOI 10.5281/zenodo.23372536](https://doi.org/10.5281/zenodo.23372536)
+- [spark-membrane](https://github.com/sparkainlp-x/spark-membrane): fail-closed console that audits SYNTHETIC 32-channel frames against the OES repositories, pinned by commit SHA, with a hash-chained run trail, evidence passport and claims gate; thresholds uncalibrated; [demo page](https://sparkainlp-x.github.io/spark-membrane/). [DOI 10.5281/zenodo.23175490](https://doi.org/10.5281/zenodo.23175490)
+- [oes-telemetry-bench](https://github.com/sparkainlp-x/oes-telemetry-bench): offline replay bench for synchronized 32-channel OES32 telemetry frames, with a strict input contract and frozen thresholds; synthetic demo. [DOI 10.5281/zenodo.23175492](https://doi.org/10.5281/zenodo.23175492)
+- [residual-gradient-workbench](https://github.com/sparkainlp-x/residual-gradient-workbench): browser workbench that keeps an OES-32 residual replay and a classical thermoelectric generator model in separate lanes; [demo page](https://sparkainlp-x.github.io/residual-gradient-workbench/). [DOI 10.5281/zenodo.23187280](https://doi.org/10.5281/zenodo.23187280)
+- [thermoelectric-ledger](https://github.com/sparkainlp-x/thermoelectric-ledger): signed heat-flow accounting that withholds exergy and efficiency figures unless the uncertainty bounds support them; 104 contract tests in CI (MIT). [DOI 10.5281/zenodo.23241554](https://doi.org/10.5281/zenodo.23241554)
+- [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench): classical toy simulation of surface- and repetition-code memory scaling with Stim and PyMatching; seeded and reproducible, no hardware results. [DOI 10.5281/zenodo.23241631](https://doi.org/10.5281/zenodo.23241631)
+- [flip-observer-1024](https://github.com/sparkainlp-x/flip-observer-1024): calibration prototype for a classical weighted readout under a hidden channel-order reversal (512 inputs, two noisy banks); SYNTHETIC; [demo page](https://sparkainlp-x.github.io/flip-observer-1024/). [DOI 10.5281/zenodo.23173449](https://doi.org/10.5281/zenodo.23173449)
+- [oes-quantum-binaural-lab](https://github.com/sparkainlp-x/oes-quantum-binaural-lab): classical toy simulation with three separate lanes (Bell-correlation Monte Carlo, scalar metrics ledger, digital stereo loopback); SYNTHETIC. [DOI 10.5281/zenodo.23175494](https://doi.org/10.5281/zenodo.23175494)
+- [signal-loom](https://github.com/sparkainlp-x/signal-loom): offline performance-art prototype in which synthetic signal streams drive an interactive visual score (MIT); [demo page](https://sparkainlp-x.github.io/signal-loom/). [DOI 10.5281/zenodo.23173453](https://doi.org/10.5281/zenodo.23173453)
+
+## Full project index
 
 This index links project names to their canonical public repositories. A **direct match** identifies the corresponding public project; it is not a claim of scientific validation. Related projects are separate implementations or tools, and their individual READMEs define their scope and evidence.
+
+**Repository count, verified fresh:** 92 public repositories on the sparkainlp-x account (live account check, 2026-10-29; previously stated as 75 in the profile). **Zenodo DOI count, snapshot as previously stated:** 64 of the 75 public repositories had Zenodo DOIs (count as of 2026-10-24); that DOI count was not re-verified against the 92-repo total for this restructure — use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+
+**Pending index correction:** [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts) is listed here as **Five** interactive toy views of classical holographic-membrane models, with a Python reference model for each ([live page](https://sparkainlp-x.github.io/holographic-thoughts/)). The shared link serves eight views (extra views Brain, Stars, Fringe), but the 8-view source was not found in the repository (main branch and the one other branch checked still describe five views), so the count is deliberately left at five until Jean supplies the 8-view source. Changing the count alone would be a false claim.
 
 ### Direct public matches
 
@@ -135,37 +212,6 @@ This index links project names to their canonical public repositories. A **direc
 | qLDPC decoder scaffold | [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) | A separate unfinished C++/HLS scaffold; the belief-propagation kernel is a placeholder and HLS/HIL runs are UNRUN. |
 
 The profile and repository READMEs distinguish synthetic or theoretical results from measured results, targets, and runs that have not been performed. Code quality or reproducibility alone does not establish scientific validity.
-
-## Featured work
-
-| Repository | What it is | Evidence status | Archive |
-|---|---|---|---|
-| [**oes-resilience**](https://github.com/sparkainlp-x/oes-resilience) · v0.6.0 | Open, reproducible benchmark for 512-channel telemetry anomaly detection with the transparent one-line OES32 reference detector; stress suite, replay evaluation, detector plugin API, a preregistered NASA SMAP/MSL comparison, and adaptive methods (v0.6.0) | Baseline SYNTHETIC (byte-reproduced in CI). On SMAP/MSL under the locked protocol, OES32 did **not** meet its success criterion; the locked OES-32-v2 re-attempt did **not** meet its predeclared improvement criterion | [DOI 10.5281/zenodo.23071166](https://doi.org/10.5281/zenodo.23071166) |
-| [**oes32-hls**](https://github.com/sparkainlp-x/oes32-hls) · v0.3.1 | C++ HLS prototype of OES-32 triage: streaming AXI4-Stream kernel, pybind11 bindings, and pytest + Hypothesis tests comparing it bit for bit with a Python reference model | `g++` testbenches and Python tests run in CI on SYNTHETIC stimuli; FPGA synthesis UNRUN (ZCU111 is a TARGET) | [DOI 10.5281/zenodo.22985525](https://doi.org/10.5281/zenodo.22985525) |
-| [**oes512q-latch**](https://github.com/sparkainlp-x/oes512q-latch) · v0.2.1 | OES-32/OES-512 classical residual latch with a self-calibrated threshold, compared with standard unsupervised detectors on all 47 labelled real-data series in the Numenta Anomaly Benchmark (NAB) | NAB numbers REPORTED (mixed results, reported as measured); unit tests SYNTHETIC; not a quantum code | [DOI 10.5281/zenodo.22998570](https://doi.org/10.5281/zenodo.22998570) |
-| [**multi-quantum-oes**](https://github.com/sparkainlp-x/multi-quantum-oes) · v0.1.2 | Offline, standard-library-only OES-512 replay-triage workbench with a preregistered stress evaluation, plus an isolated "AI ∩ quantum" toy lab | Stress result is **negative** and published as such; SYNTHETIC data; exact classical simulation, not a QPU | [DOI 10.5281/zenodo.23113851](https://doi.org/10.5281/zenodo.23113851) |
-| [**digital-to-wave-testbench**](https://github.com/sparkainlp-x/digital-to-wave-testbench) · v0.4.2 | Synthetic, dimensionless software testbench for a signed-amplitude sine encoding (noise, phase, CFO, timing; Wilson CIs) | All results SYNTHETIC; no physical validity claimed | [DOI 10.5281/zenodo.23122876](https://doi.org/10.5281/zenodo.23122876) |
-| [**evidence-passport**](https://github.com/sparkainlp-x/evidence-passport) · v0.1.1 | Offline stdlib audit tool: one experiment-run manifest → static HTML evidence passport + normalized JSON (fail-closed SHA-256); records declared evidence, never re-scores it | Bundled OES-Resilience SMAP/MSL sample keeps the verdict: criterion **not** met; three further examples labelled SYNTHETIC; [sample pages](https://sparkainlp-x.github.io/evidence-passport/) | [DOI 10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143) |
-| [**quantum-claims-passport**](https://github.com/sparkainlp-x/quantum-claims-passport) · v0.1.0 | Offline claims audit for scientific communication: classifies public claims (a planned Swiss quantum-computer hub; a modeled 613 THz tubulin frequency band; a rat behavioral study) as announcement, computational model, animal behavioral result, hypothesis, or unsupported inference, with exact-SI conversions and no combined score | Source audit only, snapshot 2026-10-05; makes none of the audited claims; no affiliation with the institutions named; [report](https://sparkainlp-x.github.io/quantum-claims-passport/report.html) | [DOI 10.5281/zenodo.23167801](https://doi.org/10.5281/zenodo.23167801) |
-
-### Recent work
-
-- [membrane-listen](https://github.com/sparkainlp-x/membrane-listen) · v0.1.0: SYNTHETIC sonification of a classical phase-oscillator ring (standard-library Python, AGPL-3.0-only); a pre-registered study with confidence intervals in which 2 of 23 hypotheses were not supported; not a recording, not a medical model; no listening test was run. [DOI 10.5281/zenodo.23687758](https://doi.org/10.5281/zenodo.23687758)
-- [membrane-heart](https://github.com/sparkainlp-x/membrane-heart) · v0.1.0: SYNTHETIC toy in which a heart-shaped network of 64 simulated neurons carries a phase wave stored in an associative memory with a calibrated gate that names or refuses a probe (standard-library Python, AGPL-3.0-only); not a medical model, not a diagnosis. [DOI 10.5281/zenodo.23680672](https://doi.org/10.5281/zenodo.23680672)
-- [identity-runtime](https://github.com/sparkainlp-x/identity-runtime): standard-library Python runtime for governed, reversible avatar personalities, with human approval quorums, expiring capability leases, the OES-61440 tripwire and a hash-chained ledger; 99 tests in CI; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/). [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946)
-- [infinite-becoming](https://github.com/sparkainlp-x/infinite-becoming): browser-playable synthetic ecosystem game on a reaction–diffusion substrate; uncalibrated; its frozen persistence regression is disclosed (1 of 5 seeds); [play online](https://sparkainlp-x.github.io/infinite-becoming/). [DOI 10.5281/zenodo.23423943](https://doi.org/10.5281/zenodo.23423943)
-- [world-holobridge](https://github.com/sparkainlp-x/world-holobridge): standard-library Python + SQLite reference prototype of a governance workflow for community-led cultural and spatial-media projects, with a bilingual browser plan generator; not legal advice; no community endorsement claimed (MIT OR Apache-2.0); [plan generator](https://sparkainlp-x.github.io/world-holobridge/). [DOI 10.5281/zenodo.23423941](https://doi.org/10.5281/zenodo.23423941)
-- [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab): rerunnable experiment cards that put my methods next to simple baselines, including where the baseline wins; every number copied from a committed source file; [live page](https://sparkainlp-x.github.io/spark-evidence-lab/). [DOI 10.5281/zenodo.23403169](https://doi.org/10.5281/zenodo.23403169)
-- [digital-to-wave-2-thz-validity](https://github.com/sparkainlp-x/digital-to-wave-2-thz-validity): engineering-validity study of the THz equations in the *Digital to Wave* Part II preprint (equation inventory, dimensional checks, protocol-locked synthetic channel benchmark); SYNTHETIC; no physical, biological or safety claim. [DOI 10.5281/zenodo.23375690](https://doi.org/10.5281/zenodo.23375690)
-- [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab): software-only path from a stylized orbit timeline to a synthetic signed-wave payload, fixed-threshold readout, optional OES replay and evidence passport, plus offline binaural capture analysis; SYNTHETIC; orbit, spacecraft, quantum and acoustic hardware UNRUN. [DOI 10.5281/zenodo.23372536](https://doi.org/10.5281/zenodo.23372536)
-- [spark-membrane](https://github.com/sparkainlp-x/spark-membrane): fail-closed console that audits SYNTHETIC 32-channel frames against the OES repositories, pinned by commit SHA, with a hash-chained run trail, evidence passport and claims gate; thresholds uncalibrated; [demo page](https://sparkainlp-x.github.io/spark-membrane/). [DOI 10.5281/zenodo.23175490](https://doi.org/10.5281/zenodo.23175490)
-- [oes-telemetry-bench](https://github.com/sparkainlp-x/oes-telemetry-bench): offline replay bench for synchronized 32-channel OES32 telemetry frames, with a strict input contract and frozen thresholds; synthetic demo. [DOI 10.5281/zenodo.23175492](https://doi.org/10.5281/zenodo.23175492)
-- [residual-gradient-workbench](https://github.com/sparkainlp-x/residual-gradient-workbench): browser workbench that keeps an OES-32 residual replay and a classical thermoelectric generator model in separate lanes; [demo page](https://sparkainlp-x.github.io/residual-gradient-workbench/). [DOI 10.5281/zenodo.23187280](https://doi.org/10.5281/zenodo.23187280)
-- [thermoelectric-ledger](https://github.com/sparkainlp-x/thermoelectric-ledger): signed heat-flow accounting that withholds exergy and efficiency figures unless the uncertainty bounds support them; 104 contract tests in CI (MIT). [DOI 10.5281/zenodo.23241554](https://doi.org/10.5281/zenodo.23241554)
-- [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench): classical toy simulation of surface- and repetition-code memory scaling with Stim and PyMatching; seeded and reproducible, no hardware results. [DOI 10.5281/zenodo.23241631](https://doi.org/10.5281/zenodo.23241631)
-- [flip-observer-1024](https://github.com/sparkainlp-x/flip-observer-1024): calibration prototype for a classical weighted readout under a hidden channel-order reversal (512 inputs, two noisy banks); SYNTHETIC; [demo page](https://sparkainlp-x.github.io/flip-observer-1024/). [DOI 10.5281/zenodo.23173449](https://doi.org/10.5281/zenodo.23173449)
-- [oes-quantum-binaural-lab](https://github.com/sparkainlp-x/oes-quantum-binaural-lab): classical toy simulation with three separate lanes (Bell-correlation Monte Carlo, scalar metrics ledger, digital stereo loopback); SYNTHETIC. [DOI 10.5281/zenodo.23175494](https://doi.org/10.5281/zenodo.23175494)
-- [signal-loom](https://github.com/sparkainlp-x/signal-loom): offline performance-art prototype in which synthetic signal streams drive an interactive visual score (MIT); [demo page](https://sparkainlp-x.github.io/signal-loom/). [DOI 10.5281/zenodo.23173453](https://doi.org/10.5281/zenodo.23173453)
 
 <details>
 <summary>Other public repositories</summary>
@@ -210,48 +256,15 @@ Repository documentation varies; check each README for its specific scope, limit
 
 </details>
 
-64 of the 75 public repositories have Zenodo DOIs (count as of 2026-10-24); the newest repositories are being released. Use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+## Proposed pins (to be set manually)
 
-## Engineering principles
+GitHub profile pins are **not** set by a commit, a branch, or a pull request. They are set manually by the account owner in the GitHub profile UI (Customize your pins). The proposed pins, in order, all verified to exist on the live account, are:
 
-- **Minimal dependencies.** Many tools use only the Python standard library (for example identity-runtime, world-holobridge, evidence-passport and multi-quantum-oes), and infinite-becoming has no third-party runtime dependencies. Others depend on what the work needs: oes-resilience requires NumPy, qec-scaling-bench uses Stim and PyMatching, and qldpc_decoder_cpp builds against the upstream `ldpc` library.
-- **Tests and CI per repository.** Test suites and GitHub Actions workflows are maintained repository by repository; identity-runtime and oes-resilience, for example, run in CI on Python 3.10–3.13.
-- **Open licences, per repository.** Most repositories are AGPL-3.0-only with a commercial-licence option; some are MIT, and world-holobridge is MIT OR Apache-2.0. Each repository's LICENSE file is authoritative.
-- **Archived releases.** Released versions are archived on Zenodo with concept and version DOIs (see [Cite](#cite)).
+1. spark-evidence-lab
+2. oes-resilience
+3. evidence-passport
+4. membrane-crystallization
+5. thought-input-game
+6. oes32-hls
 
-## How I work
-
-- **Contracts first.** Each definition lives in one normative place with executable tests. For OES-32 that is [oes32-residual@b77b612](https://github.com/sparkainlp-x/oes32-residual/tree/b77b61254f15778c6ae221843dceac7a8571158e) (ADR-001); other implementations are labelled Profile A sidecars and document how they differ.
-- **Fail-closed where specified.** Selected READMEs label unrun or unmeasured work; results and caveats are documented per project, including negative outcomes where evaluations were performed.
-- **Evidence labels where reported.** Project READMEs define their own evidence status; labels and coverage are not universal across every repository.
-
-  | Tag | Meaning |
-  |---|---|
-  | **SYNTHETIC** | Produced by our own simulation or tests on generated inputs |
-  | **REPORTED** | A project result based on identified measurements or benchmark data. The README states whether data were collected for this project or pre-existing, names the source and conditions/protocol, and says whether independently reproduced |
-  | **TARGET** | A design goal; not yet achieved or measured |
-  | **UNRUN** | Tooling or scripts exist; the run has not been performed |
-
-- **Reproducibility varies by project.** Some repositories document tested Quickstarts, automated tests, or CI; check the individual README and workflow for current coverage.
-- **Accessibility first.** Ask for alternative formats by opening an issue in any repository.
-
-Contribution guidelines, the code of conduct, and the security policy are shared across all repositories: [sparkainlp-x/.github](https://github.com/sparkainlp-x/.github).
-
-## Cite
-
-64 of the 75 public repositories have Zenodo concept and version DOIs (count as of 2026-10-24), and each released repository includes `CITATION.cff`. Use GitHub's **"Cite this repository"** button or the citation links in the specific repository when available. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
-
-## Acknowledgements
-
-Mun Seok Lee and Somnath Laha are acknowledged as collaborators. Lee's *Digital to Wave* preprints and packages received under his name are the source for the Digital-to-Wave repositories and the membrane-related repositories that say so in their Provenance sections. Laha's related discussion of a satellite concept motivated the framing of [orbit-wave-oes-lab](https://github.com/sparkainlp-x/orbit-wave-oes-lab). This is an acknowledgement only: it implies no endorsement of these repositories and no authorship. The software is by Jean-François Brisson, and each repository's README states what it derives from.
-
-## Contact
-
-Open to applied AI research and research-software roles (remote within Canada, or Fredericton, NB), and to collaboration with research groups, FPGA/decoder engineers, and accessibility-focused partners.
-
-- Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
-- LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
-- Research notebook: [Spark AI NLP notebook](https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f)
-- Live demo: [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive toy views; synthetic, classical simulation)
-- ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
-- Questions about code: open an issue in the relevant repository
+No pin is claimed as set by this change.
