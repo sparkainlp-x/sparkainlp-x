@@ -182,9 +182,34 @@ Recent work (from the previous profile, unchanged in substance):
 
 This index links project names to their canonical public repositories. A **direct match** identifies the corresponding public project; it is not a claim of scientific validation. Related projects are separate implementations or tools, and their individual READMEs define their scope and evidence.
 
-**Repository count, verified fresh:** 92 public repositories on the sparkainlp-x account (live account check, 2026-10-29; previously stated as 75 in the profile). **Zenodo DOI count, snapshot as previously stated:** 64 of the 75 public repositories had Zenodo DOIs (count as of 2026-10-24); that DOI count was not re-verified against the 92-repo total for this restructure — use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+**Repository count, verified fresh:** 114 public repositories on the sparkainlp-x account (live account check, 2026-10-31; 96 before the October 31 launch, plus the 18 launch packages pushed that day). **Zenodo DOI count, snapshot as previously stated:** 64 of the 75 public repositories had Zenodo DOIs (count as of 2026-10-24); that DOI count was not re-verified against the 114-repo total for this refresh — use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 **Pending index correction:** [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts) is listed here as **Five** interactive toy views of classical holographic-membrane models, with a Python reference model for each ([live page](https://sparkainlp-x.github.io/holographic-thoughts/)). The shared link serves eight views (extra views Brain, Stars, Fringe), but the 8-view source was not found in the repository (main branch and the one other branch checked still describe five views), so the count is deliberately left at five until Jean supplies the 8-view source. Changing the count alone would be a false claim.
+
+### October 31, 2026 launch: refusal gates, membranes, and wormhole
+
+Eighteen packages pushed to main on 2026-10-31, all AGPL-3.0-only, all synthetic classical toys unless stated otherwise. No tags or Zenodo DOIs yet, and repository descriptions are still blank — both are follow-up steps, not claims made here.
+
+| Repository | What it is |
+|---|---|
+| [refusal-gate-harness](https://github.com/sparkainlp-x/refusal-gate-harness) | Unified refusal-gate harness: the same calibration probe sets run through every Youden-gate implementation in the public repos. |
+| [shared-gate-recall](https://github.com/sparkainlp-x/shared-gate-recall) | Canonical Youden refusal gate + overlap recall module extracted from the duplicated gate/recall logic. |
+| [lattice-crystallization](https://github.com/sparkainlp-x/lattice-crystallization) | Pattern-specific lateral score on streaming-PCA (crystallized) patterns, 13x12 grid, held-out frozen gate. |
+| [adr001-arena-gate](https://github.com/sparkainlp-x/adr001-arena-gate) | ADR-001 max-abs residual swapped into the membrane arena's guard; delta exactly zero across 160 runs. |
+| [brain-heart-propulsion](https://github.com/sparkainlp-x/brain-heart-propulsion) | Synthetic linked toy: a brain membrane decides, a heart clock paces, a propulsion ring moves; refused probes do not move. |
+| [microtubule-crystallize](https://github.com/sparkainlp-x/microtubule-crystallize) | Falsifiable classical toy for crystallizing microtubules, 13x12 lattice with a seam; lead with the Exp4 NEGATIVE. |
+| [refusing-committee](https://github.com/sparkainlp-x/refusing-committee) | Heterogeneous committee of membranes at different resolutions, each with a Youden gate; lead with the NEGATIVE. |
+| [membrane-vs-hopfield](https://github.com/sparkainlp-x/membrane-vs-hopfield) | Outer-product membrane recall vs Hopfield and attention baselines, including correlated-pattern failures. |
+| [membrane-skeleton](https://github.com/sparkainlp-x/membrane-skeleton) | Membrane toy on a 31-bone-node skeleton graph; synthetic only, not anatomy or medicine. |
+| [membrane-muscle](https://github.com/sparkainlp-x/membrane-muscle) | Membrane toy on a 24-muscle-group-node graph; synthetic only, not physiology or medicine. |
+| [holo-heart-neurons](https://github.com/sparkainlp-x/holo-heart-neurons) | 64 seeded neurons on a heart-shaped geometry, pacemaker and Dijkstra beat propagation; synthetic only, not a heart or device. |
+| [bentov-kuramoto](https://github.com/sparkainlp-x/bentov-kuramoto) | Kuramoto ring and chain toys vs Bentov's 7 Hz framing, tick-time predictions and lags between rings. Version v0.2.0. |
+| [hologram-compute](https://github.com/sparkainlp-x/hologram-compute) | Holographic memory as infrastructure: recall is the matrix-vector multiply Y = WX in one pass. |
+| [image-hologram](https://github.com/sparkainlp-x/image-hologram) | Pictures stored as interference patterns in a complex outer-product memory, reconstructed from noisy cues. |
+| [humanity-guard](https://github.com/sparkainlp-x/humanity-guard) | Human-gated defensive sensing, verification, and refusal, hash-chained ledger; only alert and decoy actions exist. |
+| [arena-evidence-seal](https://github.com/sparkainlp-x/arena-evidence-seal) | Evidence-passport seal over a membrane-arena benchmark: deterministic manifest plus SHA-256 verification. |
+| [bubble-arena-injection](https://github.com/sparkainlp-x/bubble-arena-injection) | Arena 3x3 with Crystallize injection under the bubble split; vendored engine unchanged inside, observer records REPORTED only. |
+| [wormhole-yin-yang-matrix](https://github.com/sparkainlp-x/wormhole-yin-yang-matrix) | Yin and yang membranes linked by a wormhole in the 3x3 arena, validated crossings only. Version v0.3.0; bifurcation: order-flip confirmed, no sharp threshold. |
 
 ### Direct public matches
 
