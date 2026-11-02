@@ -27,7 +27,8 @@ Open to research-software and applied-AI roles in Canada, independent replicatio
 <p align="center">
   <a href="https://sparkainlpx.xyz">sparkainlpx.xyz</a> ·
   <a href="https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4">LinkedIn</a> ·
-  <a href="https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f">Research notebook</a> ·
+  <a href="https://sparkainlp-x.github.io/spark-evidence-lab/">Spark Evidence Lab</a> ·
+  <a href="https://sparkainlp-x.github.io/waveholo/game/">Browser game: WaveHolo</a> ·
   <a href="https://sparkainlp-x.github.io/holographic-thoughts/">Live demo: Holographic Thoughts</a> ·
   <a href="https://orcid.org/0009-0000-9778-5374">ORCID</a> ·
   <a href="https://zenodo.org/communities/spark-ai-nlp/">Zenodo community</a><br/>
@@ -36,7 +37,8 @@ Open to research-software and applied-AI roles in Canada, independent replicatio
 
 - Website: [sparkainlpx.xyz](https://sparkainlpx.xyz)
 - LinkedIn: [Jean-François Brisson](https://www.linkedin.com/in/jean-fran%C3%A7ois-brisson-41927b3a4)
-- Research notebook: [Spark AI NLP notebook](https://notebook.google.com/notebook/cfd4dba3-0a62-4076-8169-99c2e092d56f)
+- Experiment cards: [Spark Evidence Lab](https://sparkainlp-x.github.io/spark-evidence-lab/) (rerunnable, synthetic, with baselines)
+- Browser game: [WaveHolo](https://sparkainlp-x.github.io/waveholo/game/) (focus estimation on synthetic holograms)
 - Live demo: [Holographic Thoughts](https://sparkainlp-x.github.io/holographic-thoughts/) (interactive toy views; synthetic, classical simulation)
 - ORCID: [0009-0000-9778-5374](https://orcid.org/0009-0000-9778-5374)
 - Questions about code: open an issue in the relevant repository
@@ -159,8 +161,9 @@ Featured repositories, in the five-line format (name; purpose; demonstrated resu
   - Limitation: a source audit of wording, not a re-experiment.
   - [Repository](https://github.com/sparkainlp-x/quantum-claims-passport) · [DOI 10.5281/zenodo.23167801](https://doi.org/10.5281/zenodo.23167801)
 
-Recent work (from the previous profile, unchanged in substance):
+Recent work (from the previous profile, plus waveholo):
 
+- [waveholo](https://github.com/sparkainlp-x/waveholo): Python implementation of off-axis digital holography (record, reconstruct, estimate the focus distance) with a browser game; pipeline results SYNTHETIC; real-data check is a slope check on 530 microscope holograms at 6 of 100 stage positions, not an absolute-focus test; AGPL-3.0-only; v0.1.5; [play online](https://sparkainlp-x.github.io/waveholo/game/). [DOI 10.5281/zenodo.23653721](https://doi.org/10.5281/zenodo.23653721)
 - [membrane-listen](https://github.com/sparkainlp-x/membrane-listen) · v0.1.0: SYNTHETIC sonification of a classical phase-oscillator ring (standard-library Python, AGPL-3.0-only); a pre-registered study with confidence intervals in which 2 of 23 hypotheses were not supported; not a recording, not a medical model; no listening test was run. [DOI 10.5281/zenodo.23687758](https://doi.org/10.5281/zenodo.23687758)
 - [membrane-heart](https://github.com/sparkainlp-x/membrane-heart) · v0.1.0: SYNTHETIC toy in which a heart-shaped network of 64 simulated neurons carries a phase wave stored in an associative memory with a calibrated gate that names or refuses a probe (standard-library Python, AGPL-3.0-only); not a medical model, not a diagnosis. [DOI 10.5281/zenodo.23680672](https://doi.org/10.5281/zenodo.23680672)
 - [identity-runtime](https://github.com/sparkainlp-x/identity-runtime): standard-library Python runtime for governed, reversible avatar personalities, with human approval quorums, expiring capability leases, the OES-61440 tripwire and a hash-chained ledger; 99 tests in CI; not tested against real attackers; [demo page](https://sparkainlp-x.github.io/identity-runtime/). [DOI 10.5281/zenodo.23448946](https://doi.org/10.5281/zenodo.23448946)
