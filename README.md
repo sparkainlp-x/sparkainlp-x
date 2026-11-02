@@ -182,13 +182,13 @@ Recent work (from the previous profile, unchanged in substance):
 
 This index links project names to their canonical public repositories. A **direct match** identifies the corresponding public project; it is not a claim of scientific validation. Related projects are separate implementations or tools, and their individual READMEs define their scope and evidence.
 
-**Repository count, verified fresh:** 114 public repositories on the sparkainlp-x account (live account check, 2026-10-31; 96 before the October 31 launch, plus the 18 launch packages pushed that day). **Zenodo DOI count, snapshot as previously stated:** 64 of the 75 public repositories had Zenodo DOIs (count as of 2026-10-24); that DOI count was not re-verified against the 114-repo total for this refresh — use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
+**Repository count, verified fresh:** 115 public repositories on the sparkainlp-x account (live account check, 2026-11-02; 96 before the October 31 launch, plus the 18 launch packages pushed that day, plus waveholo-telescope, created 2026-10-31). **Zenodo DOI count, snapshot as previously stated:** 64 of the 75 public repositories had Zenodo DOIs (count as of 2026-10-24); that DOI count was not re-verified against the 115-repo total for this refresh — use each repository's README for its citation and DOI details. Records are being added to the [Spark AI NLP: Research Software](https://zenodo.org/communities/spark-ai-nlp/) Zenodo community.
 
 **Pending index correction:** [holographic-thoughts](https://github.com/sparkainlp-x/holographic-thoughts) is listed here as **Five** interactive toy views of classical holographic-membrane models, with a Python reference model for each ([live page](https://sparkainlp-x.github.io/holographic-thoughts/)). The shared link serves eight views (extra views Brain, Stars, Fringe), but the 8-view source was not found in the repository (main branch and the one other branch checked still describe five views), so the count is deliberately left at five until Jean supplies the 8-view source. Changing the count alone would be a false claim.
 
 ### October 31, 2026 launch: refusal gates, membranes, and wormhole
 
-Eighteen packages pushed to main on 2026-10-31, all AGPL-3.0-only, all synthetic classical toys unless stated otherwise. No tags or Zenodo DOIs yet, and repository descriptions are still blank — both are follow-up steps, not claims made here.
+Eighteen packages pushed to main on 2026-10-31, all AGPL-3.0-only, all synthetic classical toys unless stated otherwise. Repository descriptions are still blank (verified 2026-11-02); tags and Zenodo DOIs remain follow-up steps, not claims made here.
 
 | Repository | What it is |
 |---|---|
@@ -209,7 +209,9 @@ Eighteen packages pushed to main on 2026-10-31, all AGPL-3.0-only, all synthetic
 | [humanity-guard](https://github.com/sparkainlp-x/humanity-guard) | Human-gated defensive sensing, verification, and refusal, hash-chained ledger; only alert and decoy actions exist. |
 | [arena-evidence-seal](https://github.com/sparkainlp-x/arena-evidence-seal) | Evidence-passport seal over a membrane-arena benchmark: deterministic manifest plus SHA-256 verification. |
 | [bubble-arena-injection](https://github.com/sparkainlp-x/bubble-arena-injection) | Arena 3x3 with Crystallize injection under the bubble split; vendored engine unchanged inside, observer records REPORTED only. |
-| [wormhole-yin-yang-matrix](https://github.com/sparkainlp-x/wormhole-yin-yang-matrix) | Yin and yang membranes linked by a wormhole in the 3x3 arena, validated crossings only. Version v0.3.0; bifurcation: order-flip confirmed, no sharp threshold. |
+| [wormhole-yin-yang-matrix](https://github.com/sparkainlp-x/wormhole-yin-yang-matrix) | Yin and yang membranes linked by a wormhole in the 3x3 arena, validated crossings only. Version v0.3.0 pushed 2026-10-31; main has since advanced with v0.4.0 hole-crossing rules. Bifurcation: order-flip confirmed, no sharp threshold. |
+
+New since the October 31 launch: [waveholo-telescope](https://github.com/sparkainlp-x/waveholo-telescope) — off-axis digital holography pointed at a telescope pupil (synthetic star, Zernike aberrations, focus and wavefront recovery); main now carries v0.2.0 work: reproducible benchmarking, robustness evaluation, statistics, and claim gating. Synthetic only, no real telescope data.
 
 ### Direct public matches
 
