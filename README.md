@@ -23,6 +23,31 @@ I build research software that makes claims **inspectable, rerunnable, and falsi
 
 I am the founder of **Spark AI NLP**, a disability-led research-software initiative in Fredericton, New Brunswick, Canada. The portfolio spans classical simulation, browser demos, offline audit tools, numerical-contract testing, and C++/HLS prototypes. Each repository states its own evidence status and limitations.
 
+## Start here
+
+| If you want to… | Start with |
+|---|---|
+| Assess research integrity | [Spark Evidence Lab](https://github.com/sparkainlp-x/spark-evidence-lab) · [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport) |
+| Reproduce a telemetry result | [OES Resilience](https://github.com/sparkainlp-x/oes-resilience) · [OES-32 Residual](https://github.com/sparkainlp-x/oes32-residual) |
+| Explore holography and optics | [WaveHolo](https://github.com/sparkainlp-x/waveholo) · [WaveHolo Telescope](https://github.com/sparkainlp-x/waveholo-telescope) |
+| Review quantum-inspired engineering | [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) · [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
+| Test responsible RAG | [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) |
+| See the complete project index | [PORTFOLIO.md](PORTFOLIO.md) |
+
+## Maximum science outcomes
+
+The portfolio is being consolidated around five outcome-oriented research tracks. Each track prioritizes a locked protocol, a strong baseline, uncertainty reporting, and an explicit replication package over additional standalone prototypes.
+
+| Track | Scientific outcome sought | Primary repositories | Next decisive milestone |
+|---|---|---|---|
+| Telemetry anomaly detection | Determine whether OES-style residual methods add value over strong, transparent baselines on public benchmarks. | [oes-resilience](https://github.com/sparkainlp-x/oes-resilience), [oes32-residual](https://github.com/sparkainlp-x/oes32-residual) | Publish a locked, preregistered evaluation with confidence intervals, ablations, and a reproducible result archive. |
+| Digital holography | Establish which focus and wavefront metrics are reliable under controlled synthetic and real-data conditions. | [waveholo](https://github.com/sparkainlp-x/waveholo), [waveholo-telescope](https://github.com/sparkainlp-x/waveholo-telescope) | Expand the real-data slope check into a protocol-locked validation study with error bars and failure cases. |
+| Quantum-inspired decoding | Turn the qLDPC/HLS scaffold into a measurable software-to-hardware pathway. | [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp), [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) | Complete the BP kernel and HIL verification plan, then report synthesis, resource, latency, and decoder-performance results or explicit blockers. |
+| Evidence infrastructure | Make experimental claims mechanically inspectable, replayable, and auditable. | [spark-evidence-lab](https://github.com/sparkainlp-x/spark-evidence-lab), [evidence-passport](https://github.com/sparkainlp-x/evidence-passport), [claims-layer](https://github.com/sparkainlp-x/claims-layer) | Standardize one evidence-passport schema and demonstrate end-to-end replay for at least three independent experiments. |
+| Responsible RAG | Quantify when retrieval-grounded refusal improves answer reliability. | [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) | Run a preregistered benchmark comparing answer quality, hallucination rate, and refusal behaviour against a no-guardrail baseline. |
+
+**Decision rule:** a track advances only when it produces a rerunnable result, a clear baseline comparison, quantified uncertainty, and an explicit verdict: **reproduced**, **baseline stronger**, **open question**, or **exploratory**.
+
 ## Try the science
 
 | Demo | What it shows | Link |
