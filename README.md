@@ -112,6 +112,15 @@ Turns an experiment-run manifest into a static HTML evidence passport and normal
 - Sample passports: <https://sparkainlp-x.github.io/evidence-passport/>
 - DOI: [10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143)
 
+### 7. [Digital to Wave 2 Diffraction](https://github.com/sparkainlp-x/digital-to-wave-2-diffraction)
+
+**A diffraction-limit test that falsifies the THz readout claimed in Lee's Digital to Wave Part II.**
+
+Applies the classical Abbe limit to the paper's own numbers (0.356 nm lattice, 10 × 10 × 3 mm³ crystal, 79.6 ZB claimed, 300 GHz–3 THz). Best case (3 THz, NA = 1, 1000 bits per voxel): 301 MB readable vs 79.6 ZB claimed — short by 2.65 × 10¹⁴. A published negative result: even if the bits were there, a THz readout could not see them.
+
+- Verdict: **FAIL — falsified by ~10¹⁴–10¹⁷ in readable capacity**
+- Companion: [digital-to-wave-2-thz-validity](https://github.com/sparkainlp-x/digital-to-wave-2-thz-validity), which falsified the §2 human-wave-interface equations
+
 ## Evidence snapshot
 
 | Experiment | Status | Source |
@@ -122,6 +131,7 @@ Turns an experiment-run manifest into a static HTML evidence passport and normal
 | WaveHolo microscope slope check | **REPORTED; slope check, not absolute-focus validation** | [waveholo](https://github.com/sparkainlp-x/waveholo) |
 | WaveHolo Telescope pupil reconstruction | **Synthetic; negative result for `phase_variance`** | [waveholo-telescope](https://github.com/sparkainlp-x/waveholo-telescope) |
 | Surface-code memory toy, Stim + PyMatching | **Open question** | [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
+| THz readout diffraction limit, Digital to Wave Part II | **Falsified — FAIL** | [digital-to-wave-2-diffraction](https://github.com/sparkainlp-x/digital-to-wave-2-diffraction) |
 
 ## Research principles
 
