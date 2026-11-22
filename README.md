@@ -30,6 +30,8 @@ I am the founder of **Spark AI NLP**, a disability-led research-software initiat
 | Assess research integrity | [Spark Evidence Lab](https://github.com/sparkainlp-x/spark-evidence-lab) · [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport) |
 | Reproduce a telemetry result | [OES Resilience](https://github.com/sparkainlp-x/oes-resilience) · [OES-32 Residual](https://github.com/sparkainlp-x/oes32-residual) |
 | Explore holography and optics | [WaveHolo](https://github.com/sparkainlp-x/waveholo) · [WaveHolo Telescope](https://github.com/sparkainlp-x/waveholo-telescope) |
+| Explore field-bridge and membrane models | [Faggin field bridge](https://github.com/sparkainlp-x/faggin-field-bridge) · [Membrane Arena](https://github.com/sparkainlp-x/membrane-arena) |
+| Play the daily calibration game | [Crystallize](https://github.com/sparkainlp-x/crystallize) |
 | Review quantum-inspired engineering | [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) · [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
 | Test responsible RAG | [spark-rag-guardrail](https://github.com/sparkainlp-x/spark-rag-guardrail) |
 | See the complete project index | [PORTFOLIO.md](PORTFOLIO.md) |
@@ -59,7 +61,36 @@ The portfolio is being consolidated around five outcome-oriented research tracks
 
 ## Flagship work
 
-### 1. [Spark Evidence Lab](https://github.com/sparkainlp-x/spark-evidence-lab)
+### 1. [Faggin field bridge](https://github.com/sparkainlp-x/faggin-field-bridge)
+
+**A synthetic classical model of Faggin's Quantum Information Panpsychism — measured, preregistered, honest FAILs kept.**
+
+Tests the Faggin–D'Ariano QIP (arXiv:2012.06580) with a classical field bridge: A(δ) = U·(1+δ) − C, an observer cycle, projection, and the "spooky" symmetry. Every claim is preregistered before evaluation; thresholds are never moved to force a pass.
+
+- v0.30.0: 611/611 tests; 112 claims measured, 35 failed (honest FAILs kept on the record)
+- DOI: [10.5281/zenodo.24404948](https://doi.org/10.5281/zenodo.24404948) (v0.29.0; concept 10.5281/zenodo.24391366)
+- Status: **Synthetic / classical; Faggin's metaphysics stays interpretive and untested**
+
+### 2. [Membrane Arena](https://github.com/sparkainlp-x/membrane-arena)
+
+**A holographic-membrane shield with a reference channel that separates signal from shared artifact.**
+
+The Perception Shield: a shared disturbance is detected, an independent reference channel separates signal (94.0%) from artifact (0.0%), and a reference gate commits only on real signal.
+
+- v0.3.6: 317/317 tests
+- DOI: [10.5281/zenodo.24391771](https://doi.org/10.5281/zenodo.24391771)
+- Interactive game: [Perception Shield](https://muse.ai/s/perception-shield-zxz6txf00xmxywxj/aLjCQ5vbNZvWjxsPTiY4fFuf9xa5zFOnlu_J4wbv8zI)
+
+### 3. [Crystallize](https://github.com/sparkainlp-x/crystallize)
+
+**A daily calibration game: reveal, commit, peer review, revise — scored against an exact Bayesian reference observer.**
+
+Noisy 2-D readings; the daily puzzle is seeded by date. v0.2.1 adds event synchronization so every prior stratum is fairly represented.
+
+- v0.2.1: 69/69 tests
+- Concept DOI: [10.5281/zenodo.23619510](https://doi.org/10.5281/zenodo.23619510)
+
+### 4. [Spark Evidence Lab](https://github.com/sparkainlp-x/spark-evidence-lab)
 
 **Reproducible experiment cards with explicit baselines and negative results.**
 
@@ -69,7 +100,7 @@ The evidence layer for this portfolio. Each card records the claim tested, condi
 - DOI: [10.5281/zenodo.23403169](https://doi.org/10.5281/zenodo.23403169)
 - Verdicts: **Reproduced**, **Baseline stronger**, **Open question**, **Exploratory**
 
-### 2. [WaveHolo](https://github.com/sparkainlp-x/waveholo)
+### 5. [WaveHolo](https://github.com/sparkainlp-x/waveholo)
 
 **End-to-end off-axis digital holography: record, reconstruct, and estimate focus.**
 
@@ -79,7 +110,7 @@ Includes angular-spectrum reconstruction, sub-bin carrier estimation, focus esti
 - v0.1.5 DOI: [10.5281/zenodo.23653721](https://doi.org/10.5281/zenodo.23653721)
 - Reported real-data check: 530 microscope holograms at 6 stage positions; a **slope check**, not an absolute-focus validation.
 
-### 3. [WaveHolo Telescope](https://github.com/sparkainlp-x/waveholo-telescope)
+### 6. [WaveHolo Telescope](https://github.com/sparkainlp-x/waveholo-telescope)
 
 **Synthetic telescope-pupil holography, Zernike wavefronts, and transparent metric failures.**
 
@@ -88,7 +119,7 @@ Benchmarks pupil-plane focus, recovered wavefront agreement, pipeline floor, and
 - Interactive game: [Wavefront Clinic](https://github.com/sparkainlp-x/waveholo-telescope/blob/main/docs/game/index.html)
 - Status: **Synthetic only; no real telescope or instrument claim**
 
-### 4. [OES Resilience](https://github.com/sparkainlp-x/oes-resilience)
+### 7. [OES Resilience](https://github.com/sparkainlp-x/oes-resilience)
 
 **Telemetry anomaly detection evaluated under locked conditions.**
 
@@ -97,13 +128,13 @@ Tests anomaly-detection methods on public telemetry benchmarks, including NASA S
 - DOI: [10.5281/zenodo.23071166](https://doi.org/10.5281/zenodo.23071166)
 - Published outcome: OES-32 and its locked v2 re-attempt did **not** meet their success criteria.
 
-### 5. [OES-32 Residual](https://github.com/sparkainlp-x/oes32-residual)
+### 8. [OES-32 Residual](https://github.com/sparkainlp-x/oes32-residual)
 
 **Cross-language numerical-contract testing.**
 
 A JavaScript port validated against Python-generated contract vectors for bit-exact replay, with pinned source commits and CI regeneration.
 
-### 6. [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport)
+### 9. [Evidence Passport](https://github.com/sparkainlp-x/evidence-passport)
 
 **Provenance and disclosure infrastructure for AI experiments.**
 
@@ -112,7 +143,7 @@ Turns an experiment-run manifest into a static HTML evidence passport and normal
 - Sample passports: <https://sparkainlp-x.github.io/evidence-passport/>
 - DOI: [10.5281/zenodo.23165143](https://doi.org/10.5281/zenodo.23165143)
 
-### 7. [Digital to Wave 2 Diffraction](https://github.com/sparkainlp-x/digital-to-wave-2-diffraction)
+### 10. [Digital to Wave 2 Diffraction](https://github.com/sparkainlp-x/digital-to-wave-2-diffraction)
 
 **A diffraction-limit test that falsifies the THz readout claimed in Lee's Digital to Wave Part II.**
 
@@ -132,6 +163,10 @@ Applies the classical Abbe limit to the paper's own numbers (0.356 nm lattice, 1
 | WaveHolo Telescope pupil reconstruction | **Synthetic; negative result for `phase_variance`** | [waveholo-telescope](https://github.com/sparkainlp-x/waveholo-telescope) |
 | Surface-code memory toy, Stim + PyMatching | **Open question** | [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench) |
 | THz readout diffraction limit, Digital to Wave Part II | **Falsified — FAIL** | [digital-to-wave-2-diffraction](https://github.com/sparkainlp-x/digital-to-wave-2-diffraction) |
+| Faggin field bridge v0.30.0 — 112 claims, 35 failed (honest FAILs kept) | **Measured; synthetic / classical** | [faggin-field-bridge](https://github.com/sparkainlp-x/faggin-field-bridge) |
+| Membrane Arena v0.3.6 — shield + reference channel (signal 94.0%, artifact 0.0%) | **Measured; synthetic** | [membrane-arena](https://github.com/sparkainlp-x/membrane-arena) |
+| Crystallize v0.2.1 — event synchronization, prior shares in [15%, 35%] | **Measured; synthetic** | [crystallize](https://github.com/sparkainlp-x/crystallize) |
+| Bell + inertia + zeta v0.1.0 — 7/7 claims (CHSH 2.828, I = 2/5 MR², 10 zeta zeros) | **Measured; synthetic** | [Bell-inertia-zeta-v0.1.0](https://github.com/sparkainlp-x/Bell-inertia-zeta-v0.1.0) |
 
 ## Research principles
 
@@ -153,6 +188,7 @@ Applies the classical Abbe limit to the paper's own numbers (0.356 nm lattice, 1
 | Numerical contracts | [oes32-residual](https://github.com/sparkainlp-x/oes32-residual) |
 | C++ / HLS | [oes32-hls](https://github.com/sparkainlp-x/oes32-hls), [qldpc_decoder_cpp](https://github.com/sparkainlp-x/qldpc_decoder_cpp) |
 | Simulation | [qec-scaling-bench](https://github.com/sparkainlp-x/qec-scaling-bench), [membrane-crystallization](https://github.com/sparkainlp-x/membrane-crystallization) |
+| Field-bridge & membrane models | [faggin-field-bridge](https://github.com/sparkainlp-x/faggin-field-bridge), [membrane-arena](https://github.com/sparkainlp-x/membrane-arena), [crystallize](https://github.com/sparkainlp-x/crystallize), [Bell-inertia-zeta-v0.1.0](https://github.com/sparkainlp-x/Bell-inertia-zeta-v0.1.0) |
 | Interactive systems | [thought-input-game](https://github.com/sparkainlp-x/thought-input-game), [world-holobridge](https://github.com/sparkainlp-x/world-holobridge) |
 
 ## Claims policy
